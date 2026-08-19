@@ -1,0 +1,1198 @@
+/* =========================================================
+   NEXT GEN ENGINEERING CONSULTANCY SERVICES
+   PROJECT MARKETING PAGE
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+.pm-page {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pm-page-hero {
+    position: relative;
+
+    width: 100%;
+    min-height: 470px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(90deg,
+            rgba(2, 40, 29, 0.93),
+            rgba(2, 40, 29, 0.56),
+            rgba(2, 40, 29, 0.12)),
+        url("/images/hero-2.jpg") center / cover no-repeat;
+
+    overflow: hidden;
+}
+
+.pm-page-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(90deg,
+            rgba(2, 40, 29, 0.62),
+            transparent);
+
+    pointer-events: none;
+}
+
+.pm-page-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1250px, 90%);
+
+    margin: 0 auto;
+
+    color: #ffffff;
+}
+
+.pm-page-hero-content span {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #75d49a;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    line-height: 1.5;
+}
+
+.pm-page-hero-content h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(46px, 6vw, 78px);
+
+    line-height: 0.98;
+
+    font-weight: 300;
+
+    letter-spacing: -2px;
+}
+
+.pm-page-hero-content h1 strong {
+    color: #75d49a;
+
+    font-weight: 800;
+}
+
+.pm-page-hero-content p {
+    max-width: 520px;
+
+    margin: 23px 0 0;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+/* =========================================================
+   COMMON
+========================================================= */
+
+.pm-eyebrow {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #087f4e;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.6px;
+
+    line-height: 1.4;
+}
+
+.pm-line {
+    width: 45px;
+
+    height: 3px;
+
+    margin: 17px 0 20px;
+
+    background: #087f4e;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.pm-intro {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #ffffff;
+}
+
+.pm-intro-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+.pm-intro-content h2,
+.pm-strategy-content h2,
+.pm-process-heading h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3.2vw, 43px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.pm-intro-content h2 span,
+.pm-strategy-content h2 span,
+.pm-process-heading h2 span {
+    color: #087f4e;
+}
+
+.pm-intro-content p,
+.pm-strategy-content p,
+.pm-process-heading>p {
+    margin: 0 0 15px;
+
+    color: #696969;
+
+    font-size: 13px;
+
+    line-height: 1.85;
+}
+
+/* =========================================================
+   INTRO IMAGE
+========================================================= */
+
+.pm-intro-image {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.pm-intro-image::before {
+    content: "";
+
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+.pm-intro-image img {
+    width: 100%;
+
+    aspect-ratio: 1.25 / 1;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.pm-intro-image:hover img {
+    transform: scale(1.04);
+}
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.pm-services {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #f5f8f6;
+}
+
+.pm-section-heading {
+    width: min(750px, 90%);
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.pm-section-heading .pm-line {
+    margin: 17px auto 18px;
+}
+
+.pm-section-heading h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3.2vw, 43px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.pm-section-heading h2 span {
+    color: #087f4e;
+}
+
+.pm-section-heading p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #707070;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+}
+
+/* =========================================================
+   SERVICE GRID
+========================================================= */
+
+.pm-services-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.pm-service-card {
+    min-height: 275px;
+
+    padding: 28px 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e8e3;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.pm-service-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #bdd9c9;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.pm-service-top {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    margin-bottom: 22px;
+}
+
+.pm-service-top>span {
+    color: #a0aaa4;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.pm-service-icon {
+    width: 54px;
+
+    height: 54px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #e5f3eb;
+
+    color: #087f4e;
+}
+
+.pm-service-icon svg {
+    width: 26px;
+
+    height: 26px;
+
+    stroke-width: 1.7;
+}
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.pm-service-card h3 {
+    margin: 0 0 12px;
+
+    color: #171717;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+}
+
+.pm-service-card p {
+    margin: 0;
+
+    color: #6d6d6d;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+}
+
+/* =========================================================
+   STRATEGY
+========================================================= */
+
+.pm-strategy {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #ffffff;
+}
+
+.pm-strategy-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+/* =========================================================
+   STRATEGY IMAGE
+========================================================= */
+
+.pm-strategy-image {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.pm-strategy-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    pointer-events: none;
+}
+
+.pm-strategy-image img {
+    width: 100%;
+
+    aspect-ratio: 1.25 / 1;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.pm-strategy-image:hover img {
+    transform: scale(1.04);
+}
+
+/* =========================================================
+   STRATEGY CONTENT
+========================================================= */
+
+.pm-strategy-content h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3.2vw, 43px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.pm-strategy-content h2 span {
+    color: #087f4e;
+}
+
+.pm-strategy-content p {
+    margin: 0 0 15px;
+
+    color: #696969;
+
+    font-size: 13px;
+
+    line-height: 1.85;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.pm-button {
+    min-height: 45px;
+
+    margin-top: 12px;
+
+    padding: 0 20px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    background: #087f4e;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.pm-button:hover {
+    background: #075f3b;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.pm-process {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #f5f8f6;
+}
+
+.pm-process-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+}
+
+.pm-process-heading {
+    max-width: 720px;
+
+    margin-bottom: 45px;
+}
+
+.pm-process-heading h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3.2vw, 43px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.pm-process-heading h2 span {
+    color: #087f4e;
+}
+
+.pm-process-heading>p {
+    max-width: 600px;
+
+    margin: 0;
+
+    color: #707070;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+}
+
+.pm-process-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.pm-process-item {
+    min-height: 220px;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e8e3;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.pm-process-item:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 30px rgba(0, 0, 0, 0.06);
+}
+
+.pm-process-item>span {
+    color: #087f4e;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.pm-process-item h3 {
+    margin: 35px 0 10px;
+
+    color: #171717;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+}
+
+.pm-process-item p {
+    margin: 0;
+
+    color: #707070;
+
+    font-size: 10px;
+
+    line-height: 1.75;
+}
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.pm-cta {
+    width: 100%;
+
+    padding: 60px 0;
+
+    background: #063b2b;
+}
+
+.pm-cta-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.pm-cta-container>div>span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #75d49a;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.pm-cta h2 {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(25px, 3vw, 40px);
+
+    line-height: 1.15;
+
+    font-weight: 400;
+}
+
+.pm-cta h2 strong {
+    color: #75d49a;
+
+    font-weight: 800;
+}
+
+.pm-cta-button {
+    flex-shrink: 0;
+
+    min-height: 46px;
+
+    padding: 0 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    background: #ffffff;
+
+    color: #063b2b;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.pm-cta-button:hover {
+    background: #75d49a;
+
+    color: #063b2b;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   LARGE LAPTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .pm-intro-container,
+    .pm-services-container,
+    .pm-strategy-container,
+    .pm-process-container {
+        width: 92%;
+    }
+
+    .pm-intro-container,
+    .pm-strategy-container {
+        gap: 50px;
+    }
+
+    .pm-service-card {
+        padding: 25px 20px;
+    }
+
+    .pm-service-card h3 {
+        font-size: 15px;
+    }
+
+    .pm-service-card p {
+        font-size: 10px;
+    }
+
+    .pm-process-item {
+        padding: 20px;
+    }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .pm-page-hero {
+        min-height: 400px;
+    }
+
+    .pm-intro,
+    .pm-services,
+    .pm-strategy,
+    .pm-process {
+        padding: 70px 0;
+    }
+
+    .pm-intro-container,
+    .pm-strategy-container {
+        width: 88%;
+
+        gap: 40px;
+    }
+
+    .pm-services-container {
+        width: 88%;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pm-process-container {
+        width: 88%;
+    }
+
+    .pm-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pm-intro-content p,
+    .pm-strategy-content p,
+    .pm-process-heading>p {
+        font-size: 11px;
+    }
+
+    .pm-cta-container {
+        width: 88%;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    /* HERO */
+
+    .pm-page-hero {
+        min-height: 360px;
+
+        background-position: center;
+    }
+
+    .pm-page-hero-content {
+        width: 88%;
+    }
+
+    .pm-page-hero-content span {
+        font-size: 9px;
+
+        letter-spacing: 1.3px;
+    }
+
+    .pm-page-hero-content h1 {
+        font-size: 44px;
+
+        letter-spacing: -1px;
+    }
+
+    .pm-page-hero-content p {
+        max-width: 380px;
+
+        margin-top: 18px;
+
+        font-size: 10px;
+    }
+
+    /* COMMON */
+
+    .pm-eyebrow {
+        font-size: 9px;
+
+        letter-spacing: 1.3px;
+    }
+
+    .pm-line {
+        width: 38px;
+
+        height: 2px;
+
+        margin: 13px 0 17px;
+    }
+
+    /* INTRO */
+
+    .pm-intro {
+        padding: 55px 0;
+    }
+
+    .pm-intro-container {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .pm-intro-content h2,
+    .pm-strategy-content h2,
+    .pm-process-heading h2,
+    .pm-section-heading h2 {
+        font-size: 29px;
+    }
+
+    .pm-intro-content p,
+    .pm-strategy-content p,
+    .pm-process-heading>p {
+        font-size: 10.5px;
+
+        line-height: 1.8;
+    }
+
+    /* SERVICES */
+
+    .pm-services {
+        padding: 55px 0;
+    }
+
+    .pm-section-heading {
+        width: 88%;
+
+        margin-bottom: 30px;
+    }
+
+    .pm-section-heading p {
+        font-size: 10.5px;
+
+        line-height: 1.7;
+    }
+
+    .pm-services-container {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 13px;
+    }
+
+    .pm-service-card {
+        min-height: auto;
+
+        padding: 23px 20px;
+    }
+
+    .pm-service-top {
+        margin-bottom: 17px;
+    }
+
+    .pm-service-top>span {
+        font-size: 9px;
+    }
+
+    .pm-service-icon {
+        width: 48px;
+
+        height: 48px;
+    }
+
+    .pm-service-icon svg {
+        width: 23px;
+
+        height: 23px;
+    }
+
+    .pm-service-card h3 {
+        font-size: 14px;
+    }
+
+    .pm-service-card p {
+        font-size: 10px;
+
+        line-height: 1.75;
+    }
+
+    /* STRATEGY */
+
+    .pm-strategy {
+        padding: 55px 0;
+    }
+
+    .pm-strategy-container {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .pm-strategy-image {
+        order: 1;
+    }
+
+    .pm-strategy-content {
+        order: 2;
+    }
+
+    .pm-button {
+        width: 100%;
+
+        min-height: 44px;
+
+        font-size: 9px;
+    }
+
+    /* PROCESS */
+
+    .pm-process {
+        padding: 55px 0;
+    }
+
+    .pm-process-container {
+        width: 88%;
+    }
+
+    .pm-process-heading {
+        margin-bottom: 30px;
+    }
+
+    .pm-process-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .pm-process-item {
+        min-height: 170px;
+
+        padding: 22px;
+    }
+
+    .pm-process-item h3 {
+        margin-top: 25px;
+
+        font-size: 16px;
+    }
+
+    .pm-process-item p {
+        font-size: 9.5px;
+    }
+
+    /* CTA */
+
+    .pm-cta {
+        padding: 45px 0;
+    }
+
+    .pm-cta-container {
+        width: 88%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 22px;
+    }
+
+    .pm-cta h2 {
+        font-size: 27px;
+    }
+
+    .pm-cta-button {
+        width: 100%;
+
+        min-height: 44px;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .pm-page-hero {
+        min-height: 320px;
+    }
+
+    .pm-page-hero-content {
+        width: 90%;
+    }
+
+    .pm-page-hero-content h1 {
+        font-size: 38px;
+    }
+
+    .pm-page-hero-content p {
+        font-size: 9px;
+    }
+
+    .pm-intro,
+    .pm-services,
+    .pm-strategy,
+    .pm-process {
+        padding: 48px 0;
+    }
+
+    .pm-intro-container,
+    .pm-services-container,
+    .pm-strategy-container,
+    .pm-process-container,
+    .pm-cta-container {
+        width: 90%;
+    }
+
+    .pm-intro-content h2,
+    .pm-strategy-content h2,
+    .pm-process-heading h2,
+    .pm-section-heading h2 {
+        font-size: 26px;
+    }
+
+    .pm-service-card {
+        padding: 21px 17px;
+    }
+
+    .pm-service-card h3 {
+        font-size: 13px;
+    }
+
+    .pm-service-card p {
+        font-size: 9px;
+    }
+
+    .pm-intro-content p,
+    .pm-strategy-content p,
+    .pm-process-heading>p {
+        font-size: 9.5px;
+    }
+
+    .pm-cta h2 {
+        font-size: 24px;
+    }
+}
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .pm-page-hero {
+        min-height: 300px;
+    }
+
+    .pm-page-hero-content h1 {
+        font-size: 33px;
+    }
+
+    .pm-intro-content h2,
+    .pm-strategy-content h2,
+    .pm-process-heading h2,
+    .pm-section-heading h2 {
+        font-size: 24px;
+    }
+
+    .pm-service-card p,
+    .pm-intro-content p,
+    .pm-strategy-content p,
+    .pm-process-heading>p {
+        font-size: 9px;
+    }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .pm-intro-image img,
+    .pm-strategy-image img,
+    .pm-service-card,
+    .pm-process-item,
+    .pm-button,
+    .pm-cta-button {
+        transition: none;
+    }
+}

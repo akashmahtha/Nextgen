@@ -1,0 +1,481 @@
+/* =========================================================
+   NEXTGEN CIVIL
+   TESTIMONIALS SECTION
+========================================================= */
+
+.testimonials-section {
+    width: 100%;
+
+    padding: 75px 0 70px;
+
+    background: #f7f9f7;
+
+    overflow: hidden;
+}
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.testimonials-header {
+    width: min(750px, 90%);
+
+    margin: 0 auto 40px;
+
+    text-align: center;
+}
+
+.testimonials-eyebrow {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #087f4e;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+.testimonials-header h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3vw, 40px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.testimonials-header h2 span {
+    color: #087f4e;
+}
+
+.testimonials-title-line {
+    width: 45px;
+
+    height: 3px;
+
+    margin: 15px auto 0;
+
+    background: #087f4e;
+}
+
+/* =========================================================
+   TESTIMONIAL WRAPPER
+========================================================= */
+
+.testimonials-wrapper {
+    position: relative;
+
+    width: min(1280px, 92%);
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+}
+
+/* =========================================================
+   CARDS CONTAINER
+========================================================= */
+
+.testimonials-container {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+/* =========================================================
+   TESTIMONIAL CARD
+========================================================= */
+
+.testimonial-card {
+    position: relative;
+
+    min-height: 225px;
+
+    padding: 30px 25px 22px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3e8e4;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #c9ddd0;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+/* =========================================================
+   QUOTE ICON
+========================================================= */
+
+.testimonial-quote {
+    position: absolute;
+
+    top: 17px;
+
+    left: 22px;
+
+    color: #087f4e;
+
+    opacity: 0.9;
+}
+
+.testimonial-quote svg {
+    fill: rgba(8, 127, 78, 0.08);
+}
+
+/* =========================================================
+   TESTIMONIAL TEXT
+========================================================= */
+
+.testimonial-text {
+    margin: 28px 0 25px;
+
+    color: #555555;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+/* =========================================================
+   CLIENT INFO
+========================================================= */
+
+.testimonial-client {
+    padding-top: 15px;
+
+    border-top: 1px solid #edf0ed;
+}
+
+.testimonial-client-info {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.testimonial-client h3 {
+    margin: 0 0 4px;
+
+    color: #171717;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+.testimonial-client span {
+    color: #087f4e;
+
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+/* =========================================================
+   ARROWS
+========================================================= */
+
+.testimonial-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 5;
+
+    width: 36px;
+
+    height: 36px;
+
+    padding: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #087f4e;
+
+    color: #ffffff;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.12);
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.testimonial-arrow:hover {
+    background: #075f3b;
+}
+
+.testimonial-arrow-left {
+    left: -18px;
+}
+
+.testimonial-arrow-right {
+    right: -18px;
+}
+
+/* =========================================================
+   DOTS
+========================================================= */
+
+.testimonial-dots {
+    margin-top: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+}
+
+.testimonial-dot {
+    width: 7px;
+
+    height: 7px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #c5d2ca;
+
+    cursor: pointer;
+
+    transition:
+        width 0.3s ease,
+        background 0.3s ease;
+}
+
+.testimonial-dot.active {
+    width: 20px;
+
+    border-radius: 8px;
+
+    background: #087f4e;
+}
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .testimonials-wrapper {
+        width: 88%;
+    }
+
+    .testimonials-container {
+        gap: 12px;
+    }
+
+    .testimonial-card {
+        min-height: 220px;
+
+        padding: 27px 20px 20px;
+    }
+
+    .testimonial-text {
+        font-size: 11px;
+    }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .testimonials-section {
+        padding: 65px 0;
+    }
+
+    .testimonials-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial-card:nth-child(3) {
+        display: none;
+    }
+
+    .testimonial-arrow-left {
+        left: -15px;
+    }
+
+    .testimonial-arrow-right {
+        right: -15px;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .testimonials-section {
+        padding: 55px 0 60px;
+    }
+
+    .testimonials-header {
+        width: 88%;
+
+        margin-bottom: 30px;
+    }
+
+    .testimonials-eyebrow {
+        font-size: 9px;
+    }
+
+    .testimonials-header h2 {
+        font-size: 28px;
+    }
+
+    .testimonials-title-line {
+        width: 38px;
+
+        height: 2px;
+
+        margin-top: 12px;
+    }
+
+    .testimonials-wrapper {
+        width: 82%;
+    }
+
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-card {
+        min-height: 220px;
+
+        padding: 28px 20px 20px;
+    }
+
+    .testimonial-card:not(:first-child) {
+        display: none;
+    }
+
+    .testimonial-text {
+        font-size: 11px;
+
+        line-height: 1.7;
+    }
+
+    .testimonial-arrow {
+        width: 32px;
+
+        height: 32px;
+    }
+
+    .testimonial-arrow-left {
+        left: -17px;
+    }
+
+    .testimonial-arrow-right {
+        right: -17px;
+    }
+
+    .testimonial-dots {
+        margin-top: 20px;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .testimonials-wrapper {
+        width: 84%;
+    }
+
+    .testimonial-card {
+        min-height: 215px;
+
+        padding: 25px 17px 18px;
+    }
+
+    .testimonial-text {
+        font-size: 10px;
+    }
+
+    .testimonial-client h3 {
+        font-size: 10px;
+    }
+
+    .testimonial-client span {
+        font-size: 8px;
+    }
+}
+
+/* =========================================================
+   EXTRA SMALL
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .testimonials-section {
+        padding: 50px 0 55px;
+    }
+
+    .testimonials-header h2 {
+        font-size: 26px;
+    }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .testimonial-card,
+    .testimonial-arrow,
+    .testimonial-dot {
+        transition: none;
+    }
+}

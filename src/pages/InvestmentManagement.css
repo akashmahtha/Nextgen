@@ -1,0 +1,1187 @@
+/* =========================================================
+   NEXT GEN ENGINEERING CONSULTANCY SERVICES
+   INVESTMENT MANAGEMENT PAGE
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+.im-page {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.im-page-hero {
+    position: relative;
+
+    width: 100%;
+    min-height: 470px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(90deg,
+            rgba(2, 40, 29, 0.93),
+            rgba(2, 40, 29, 0.56),
+            rgba(2, 40, 29, 0.12)),
+        url("/images/hero-3.jpg") center / cover no-repeat;
+
+    overflow: hidden;
+}
+
+.im-page-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(90deg,
+            rgba(2, 40, 29, 0.62),
+            transparent);
+
+    pointer-events: none;
+}
+
+.im-page-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1250px, 90%);
+
+    margin: 0 auto;
+
+    color: #ffffff;
+}
+
+.im-page-hero-content span {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #75d49a;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    line-height: 1.5;
+}
+
+.im-page-hero-content h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(46px, 6vw, 78px);
+
+    line-height: 0.98;
+
+    font-weight: 300;
+
+    letter-spacing: -2px;
+}
+
+.im-page-hero-content h1 strong {
+    color: #75d49a;
+
+    font-weight: 800;
+}
+
+.im-page-hero-content p {
+    max-width: 520px;
+
+    margin: 23px 0 0;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+/* =========================================================
+   COMMON
+========================================================= */
+
+.im-eyebrow {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #087f4e;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.6px;
+
+    line-height: 1.4;
+}
+
+.im-line {
+    width: 45px;
+
+    height: 3px;
+
+    margin: 17px 0 20px;
+
+    background: #087f4e;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.im-intro {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #ffffff;
+}
+
+.im-intro-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+.im-intro-content h2,
+.im-approach-content h2,
+.im-areas-heading h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3.2vw, 43px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.im-intro-content h2 span,
+.im-approach-content h2 span,
+.im-areas-heading h2 span {
+    color: #087f4e;
+}
+
+.im-intro-content p,
+.im-approach-content p {
+    margin: 0 0 15px;
+
+    color: #696969;
+
+    font-size: 13px;
+
+    line-height: 1.85;
+}
+
+/* =========================================================
+   INTRO IMAGE
+========================================================= */
+
+.im-intro-image {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.im-intro-image::before {
+    content: "";
+
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+
+    z-index: 2;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    pointer-events: none;
+}
+
+.im-intro-image img {
+    width: 100%;
+
+    aspect-ratio: 1.25 / 1;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.im-intro-image:hover img {
+    transform: scale(1.04);
+}
+
+/* =========================================================
+   INVESTMENT SERVICES
+========================================================= */
+
+.im-services {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #f5f8f6;
+}
+
+.im-section-heading {
+    width: min(750px, 90%);
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.im-section-heading .im-line {
+    margin: 17px auto 18px;
+}
+
+.im-section-heading h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3.2vw, 43px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.im-section-heading h2 span {
+    color: #087f4e;
+}
+
+.im-section-heading p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #707070;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+}
+
+/* =========================================================
+   SERVICE GRID
+========================================================= */
+
+.im-services-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.im-service-card {
+    min-height: 275px;
+
+    padding: 28px 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e8e3;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.im-service-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #bdd9c9;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+/* =========================================================
+   SERVICE TOP
+========================================================= */
+
+.im-service-top {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    margin-bottom: 22px;
+}
+
+.im-service-top>span {
+    color: #a0aaa4;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.im-service-icon {
+    width: 54px;
+
+    height: 54px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #e5f3eb;
+
+    color: #087f4e;
+}
+
+.im-service-icon svg {
+    width: 26px;
+
+    height: 26px;
+
+    stroke-width: 1.7;
+}
+
+/* =========================================================
+   SERVICE CONTENT
+========================================================= */
+
+.im-service-card h3 {
+    margin: 0 0 12px;
+
+    color: #171717;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+}
+
+.im-service-card p {
+    margin: 0;
+
+    color: #6d6d6d;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+}
+
+/* =========================================================
+   APPROACH
+========================================================= */
+
+.im-approach {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #ffffff;
+}
+
+.im-approach-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+/* =========================================================
+   APPROACH IMAGE
+========================================================= */
+
+.im-approach-image {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.im-approach-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    pointer-events: none;
+}
+
+.im-approach-image img {
+    width: 100%;
+
+    aspect-ratio: 1.25 / 1;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.im-approach-image:hover img {
+    transform: scale(1.04);
+}
+
+/* =========================================================
+   APPROACH CONTENT
+========================================================= */
+
+.im-approach-content h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3.2vw, 43px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.im-approach-content h2 span {
+    color: #087f4e;
+}
+
+.im-approach-content p {
+    margin: 0 0 15px;
+
+    color: #696969;
+
+    font-size: 13px;
+
+    line-height: 1.85;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.im-button {
+    min-height: 45px;
+
+    margin-top: 12px;
+
+    padding: 0 20px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    background: #087f4e;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.im-button:hover {
+    background: #075f3b;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   KEY AREAS
+========================================================= */
+
+.im-areas {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #f5f8f6;
+}
+
+.im-areas-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+}
+
+.im-areas-heading {
+    max-width: 700px;
+
+    margin-bottom: 45px;
+}
+
+.im-areas-heading h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3.2vw, 43px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.im-areas-heading h2 span {
+    color: #087f4e;
+}
+
+/* =========================================================
+   AREAS GRID
+========================================================= */
+
+.im-areas-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.im-area-card {
+    min-height: 220px;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e8e3;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.im-area-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 30px rgba(0, 0, 0, 0.06);
+}
+
+.im-area-card>span {
+    color: #087f4e;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.im-area-card h3 {
+    margin: 35px 0 10px;
+
+    color: #171717;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+}
+
+.im-area-card p {
+    margin: 0;
+
+    color: #707070;
+
+    font-size: 10px;
+
+    line-height: 1.75;
+}
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.im-cta {
+    width: 100%;
+
+    padding: 60px 0;
+
+    background: #063b2b;
+}
+
+.im-cta-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.im-cta-container>div>span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #75d49a;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.im-cta h2 {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(25px, 3vw, 40px);
+
+    line-height: 1.15;
+
+    font-weight: 400;
+}
+
+.im-cta h2 strong {
+    color: #75d49a;
+
+    font-weight: 800;
+}
+
+.im-cta-button {
+    flex-shrink: 0;
+
+    min-height: 46px;
+
+    padding: 0 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    background: #ffffff;
+
+    color: #063b2b;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.im-cta-button:hover {
+    background: #75d49a;
+
+    color: #063b2b;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   LARGE LAPTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .im-intro-container,
+    .im-services-container,
+    .im-approach-container,
+    .im-areas-container {
+        width: 92%;
+    }
+
+    .im-intro-container,
+    .im-approach-container {
+        gap: 50px;
+    }
+
+    .im-service-card {
+        padding: 25px 20px;
+    }
+
+    .im-service-card h3 {
+        font-size: 15px;
+    }
+
+    .im-service-card p {
+        font-size: 10px;
+    }
+
+    .im-area-card {
+        padding: 20px;
+    }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .im-page-hero {
+        min-height: 400px;
+    }
+
+    .im-intro,
+    .im-services,
+    .im-approach,
+    .im-areas {
+        padding: 70px 0;
+    }
+
+    .im-intro-container,
+    .im-approach-container {
+        width: 88%;
+
+        gap: 40px;
+    }
+
+    .im-services-container {
+        width: 88%;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .im-areas-container {
+        width: 88%;
+    }
+
+    .im-areas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .im-intro-content p,
+    .im-approach-content p,
+    .im-section-heading p {
+        font-size: 11px;
+    }
+
+    .im-cta-container {
+        width: 88%;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    /* HERO */
+
+    .im-page-hero {
+        min-height: 360px;
+
+        background-position: center;
+    }
+
+    .im-page-hero-content {
+        width: 88%;
+    }
+
+    .im-page-hero-content span {
+        font-size: 9px;
+
+        letter-spacing: 1.3px;
+    }
+
+    .im-page-hero-content h1 {
+        font-size: 44px;
+
+        letter-spacing: -1px;
+    }
+
+    .im-page-hero-content p {
+        max-width: 380px;
+
+        margin-top: 18px;
+
+        font-size: 10px;
+    }
+
+    /* COMMON */
+
+    .im-eyebrow {
+        font-size: 9px;
+
+        letter-spacing: 1.3px;
+    }
+
+    .im-line {
+        width: 38px;
+
+        height: 2px;
+
+        margin: 13px 0 17px;
+    }
+
+    /* INTRO */
+
+    .im-intro {
+        padding: 55px 0;
+    }
+
+    .im-intro-container {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .im-intro-content h2,
+    .im-approach-content h2,
+    .im-areas-heading h2,
+    .im-section-heading h2 {
+        font-size: 29px;
+    }
+
+    .im-intro-content p,
+    .im-approach-content p,
+    .im-section-heading p {
+        font-size: 10.5px;
+
+        line-height: 1.8;
+    }
+
+    /* SERVICES */
+
+    .im-services {
+        padding: 55px 0;
+    }
+
+    .im-section-heading {
+        width: 88%;
+
+        margin-bottom: 30px;
+    }
+
+    .im-section-heading p {
+        line-height: 1.7;
+    }
+
+    .im-services-container {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 13px;
+    }
+
+    .im-service-card {
+        min-height: auto;
+
+        padding: 23px 20px;
+    }
+
+    .im-service-top {
+        margin-bottom: 17px;
+    }
+
+    .im-service-top>span {
+        font-size: 9px;
+    }
+
+    .im-service-icon {
+        width: 48px;
+
+        height: 48px;
+    }
+
+    .im-service-icon svg {
+        width: 23px;
+
+        height: 23px;
+    }
+
+    .im-service-card h3 {
+        font-size: 14px;
+    }
+
+    .im-service-card p {
+        font-size: 10px;
+
+        line-height: 1.75;
+    }
+
+    /* APPROACH */
+
+    .im-approach {
+        padding: 55px 0;
+    }
+
+    .im-approach-container {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .im-approach-image {
+        order: 1;
+    }
+
+    .im-approach-content {
+        order: 2;
+    }
+
+    .im-button {
+        width: 100%;
+
+        min-height: 44px;
+
+        font-size: 9px;
+    }
+
+    /* AREAS */
+
+    .im-areas {
+        padding: 55px 0;
+    }
+
+    .im-areas-container {
+        width: 88%;
+    }
+
+    .im-areas-heading {
+        margin-bottom: 30px;
+    }
+
+    .im-areas-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .im-area-card {
+        min-height: 170px;
+
+        padding: 22px;
+    }
+
+    .im-area-card h3 {
+        margin-top: 25px;
+
+        font-size: 16px;
+    }
+
+    .im-area-card p {
+        font-size: 9.5px;
+    }
+
+    /* CTA */
+
+    .im-cta {
+        padding: 45px 0;
+    }
+
+    .im-cta-container {
+        width: 88%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 22px;
+    }
+
+    .im-cta h2 {
+        font-size: 27px;
+    }
+
+    .im-cta-button {
+        width: 100%;
+
+        min-height: 44px;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .im-page-hero {
+        min-height: 320px;
+    }
+
+    .im-page-hero-content {
+        width: 90%;
+    }
+
+    .im-page-hero-content h1 {
+        font-size: 38px;
+    }
+
+    .im-page-hero-content p {
+        font-size: 9px;
+    }
+
+    .im-intro,
+    .im-services,
+    .im-approach,
+    .im-areas {
+        padding: 48px 0;
+    }
+
+    .im-intro-container,
+    .im-services-container,
+    .im-approach-container,
+    .im-areas-container,
+    .im-cta-container {
+        width: 90%;
+    }
+
+    .im-intro-content h2,
+    .im-approach-content h2,
+    .im-areas-heading h2,
+    .im-section-heading h2 {
+        font-size: 26px;
+    }
+
+    .im-service-card {
+        padding: 21px 17px;
+    }
+
+    .im-service-card h3 {
+        font-size: 13px;
+    }
+
+    .im-service-card p {
+        font-size: 9px;
+    }
+
+    .im-intro-content p,
+    .im-approach-content p,
+    .im-section-heading p {
+        font-size: 9.5px;
+    }
+
+    .im-cta h2 {
+        font-size: 24px;
+    }
+}
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .im-page-hero {
+        min-height: 300px;
+    }
+
+    .im-page-hero-content h1 {
+        font-size: 33px;
+    }
+
+    .im-intro-content h2,
+    .im-approach-content h2,
+    .im-areas-heading h2,
+    .im-section-heading h2 {
+        font-size: 24px;
+    }
+
+    .im-service-card p,
+    .im-intro-content p,
+    .im-approach-content p,
+    .im-section-heading p {
+        font-size: 9px;
+    }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .im-intro-image img,
+    .im-approach-image img,
+    .im-service-card,
+    .im-area-card,
+    .im-button,
+    .im-cta-button {
+        transition: none;
+    }
+}

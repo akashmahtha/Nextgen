@@ -1,0 +1,1219 @@
+/* =========================================================
+   NEXTGEN CIVIL
+   ABOUT PAGE
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+.about-page {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* =========================================================
+   ABOUT HERO
+========================================================= */
+
+.about-page-hero {
+    position: relative;
+
+    width: 100%;
+    min-height: 470px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(90deg,
+            rgba(2, 40, 29, 0.92),
+            rgba(2, 40, 29, 0.55),
+            rgba(2, 40, 29, 0.15)),
+        url("/images/about.jpg") center / cover no-repeat;
+
+    overflow: hidden;
+}
+
+.about-page-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(90deg,
+            rgba(2, 40, 29, 0.65),
+            transparent);
+
+    pointer-events: none;
+}
+
+.about-page-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1250px, 90%);
+
+    margin: 0 auto;
+
+    color: #ffffff;
+}
+
+.about-page-hero-content span {
+    display: block;
+
+    max-width: 700px;
+
+    margin-bottom: 15px;
+
+    color: #75d49a;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.8px;
+
+    line-height: 1.5;
+}
+
+.about-page-hero-content h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(42px, 6vw, 76px);
+
+    line-height: 0.98;
+
+    font-weight: 300;
+
+    letter-spacing: -2px;
+}
+
+.about-page-hero-content h1 strong {
+    color: #75d49a;
+
+    font-weight: 800;
+}
+
+.about-page-hero-content p {
+    max-width: 520px;
+
+    margin: 24px 0 0;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+/* =========================================================
+   COMMON EYEBROW
+========================================================= */
+
+.about-eyebrow {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #087f4e;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.6px;
+
+    line-height: 1.4;
+}
+
+/* =========================================================
+   COMMON LINE
+========================================================= */
+
+.about-line {
+    width: 45px;
+
+    height: 3px;
+
+    margin: 17px 0 20px;
+
+    background: #087f4e;
+}
+
+/* =========================================================
+   COMMON TEXT
+========================================================= */
+
+.about-intro-content p,
+.about-approach-content p,
+.about-real-estate-content p,
+.about-vision-box p {
+    margin: 0 0 15px;
+
+    color: #686868;
+
+    font-size: 13px;
+
+    line-height: 1.85;
+}
+
+/* =========================================================
+   INTRO SECTION
+========================================================= */
+
+.about-intro {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #ffffff;
+}
+
+.about-intro-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+/* =========================================================
+   INTRO IMAGE
+========================================================= */
+
+.about-intro-image {
+    position: relative;
+
+    overflow: visible;
+}
+
+.about-intro-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 75px;
+    height: 75px;
+
+    top: -10px;
+    left: -10px;
+
+    border-top: 3px solid #087f4e;
+    border-left: 3px solid #087f4e;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+.about-intro-image::after {
+    content: "";
+
+    position: absolute;
+
+    width: 75px;
+    height: 75px;
+
+    right: -10px;
+    bottom: -10px;
+
+    border-right: 3px solid #087f4e;
+    border-bottom: 3px solid #087f4e;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+.about-intro-image img {
+    width: 100%;
+
+    aspect-ratio: 1.15 / 1;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+/* =========================================================
+   INTRO HEADING
+========================================================= */
+
+.about-intro-content h2,
+.about-approach-content h2,
+.about-real-estate-content h2,
+.about-vision-box h2,
+.about-section-heading h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3.2vw, 43px);
+
+    line-height: 1.12;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.about-intro-content h2 span,
+.about-approach-content h2 span,
+.about-real-estate-content h2 span,
+.about-vision-box h2 span,
+.about-section-heading h2 span {
+    color: #087f4e;
+}
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.about-features {
+    margin-top: 25px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 14px 20px;
+}
+
+.about-features div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #333333;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    line-height: 1.5;
+}
+
+.about-features svg {
+    flex-shrink: 0;
+
+    color: #087f4e;
+}
+
+/* =========================================================
+   EXPERTISE SECTION
+========================================================= */
+
+.about-expertise {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #f5f8f6;
+}
+
+.about-section-heading {
+    width: min(750px, 90%);
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.about-section-heading .about-line {
+    margin: 17px auto 18px;
+}
+
+.about-section-heading p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #707070;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+}
+
+/* =========================================================
+   EXPERTISE GRID
+========================================================= */
+
+.about-expertise-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+/* =========================================================
+   EXPERTISE CARD
+========================================================= */
+
+.about-expertise-card {
+    position: relative;
+
+    min-height: 265px;
+
+    padding: 30px 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3e9e5;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.about-expertise-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #c5ddd0;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+/* =========================================================
+   CARD ICON
+========================================================= */
+
+.about-card-icon {
+    width: 52px;
+
+    height: 52px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #eaf5ef;
+
+    color: #087f4e;
+
+    border-radius: 2px;
+}
+
+.about-expertise-card h3 {
+    margin: 0 0 11px;
+
+    color: #1a1a1a;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+}
+
+.about-expertise-card p {
+    margin: 0;
+
+    color: #707070;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+}
+
+/* =========================================================
+   PROJECT MARKETING SECTION
+========================================================= */
+
+.about-approach {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #ffffff;
+}
+
+.about-approach-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+.about-approach-content {
+    order: 1;
+}
+
+.about-approach-image {
+    order: 2;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.about-approach-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border: 1px solid rgba(8, 127, 78, 0.15);
+
+    pointer-events: none;
+}
+
+.about-approach-image img {
+    width: 100%;
+
+    aspect-ratio: 1.35 / 1;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.about-approach-image:hover img {
+    transform: scale(1.04);
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.about-button {
+    min-height: 45px;
+
+    margin-top: 15px;
+
+    padding: 0 20px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    background: #087f4e;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.about-button:hover {
+    background: #075f3b;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   REAL ESTATE SECTION
+========================================================= */
+
+.about-real-estate {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #f5f8f6;
+}
+
+.about-real-estate-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+.about-real-estate-image {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.about-real-estate-image::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.65);
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+.about-real-estate-image img {
+    width: 100%;
+
+    aspect-ratio: 1.25 / 1;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.about-real-estate-image:hover img {
+    transform: scale(1.04);
+}
+
+.about-real-estate-content {
+    order: 2;
+}
+
+/* =========================================================
+   VISION & MISSION
+========================================================= */
+
+.about-vision {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #ffffff;
+}
+
+.about-vision-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.about-vision-box {
+    padding: 40px;
+
+    background: #f5f8f6;
+
+    border: 1px solid #e2e9e4;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.about-vision-box:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 30px rgba(0, 0, 0, 0.06);
+}
+
+.about-vision-box h2 {
+    font-size: 30px;
+}
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.about-cta {
+    width: 100%;
+
+    padding: 60px 0;
+
+    background: #063b2b;
+}
+
+.about-cta-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.about-cta-container>div>span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #75d49a;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.about-cta h2 {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(25px, 3vw, 40px);
+
+    line-height: 1.15;
+
+    font-weight: 400;
+}
+
+.about-cta h2 strong {
+    color: #75d49a;
+
+    font-weight: 800;
+}
+
+.about-cta-button {
+    flex-shrink: 0;
+
+    min-height: 46px;
+
+    padding: 0 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    background: #ffffff;
+
+    color: #063b2b;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.about-cta-button:hover {
+    background: #75d49a;
+
+    color: #063b2b;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   LARGE LAPTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .about-intro-container,
+    .about-approach-container,
+    .about-real-estate-container {
+        width: 92%;
+
+        gap: 50px;
+    }
+
+    .about-expertise-container,
+    .about-vision-container {
+        width: 92%;
+    }
+
+    .about-expertise-card {
+        padding: 25px 20px;
+    }
+
+    .about-expertise-card h3 {
+        font-size: 15px;
+    }
+
+    .about-expertise-card p {
+        font-size: 10px;
+    }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .about-page-hero {
+        min-height: 400px;
+    }
+
+    .about-intro,
+    .about-expertise,
+    .about-approach,
+    .about-real-estate,
+    .about-vision {
+        padding: 70px 0;
+    }
+
+    .about-intro-container,
+    .about-approach-container,
+    .about-real-estate-container {
+        width: 88%;
+
+        gap: 40px;
+    }
+
+    .about-expertise-container {
+        width: 88%;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-vision-container {
+        width: 88%;
+    }
+
+    .about-vision-box {
+        padding: 30px;
+    }
+
+    .about-intro-content p,
+    .about-approach-content p,
+    .about-real-estate-content p,
+    .about-vision-box p {
+        font-size: 11px;
+    }
+
+    .about-cta-container {
+        width: 88%;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    /* HERO */
+
+    .about-page-hero {
+        min-height: 360px;
+
+        background-position: center;
+    }
+
+    .about-page-hero-content {
+        width: 88%;
+    }
+
+    .about-page-hero-content span {
+        font-size: 9px;
+
+        letter-spacing: 1.2px;
+    }
+
+    .about-page-hero-content h1 {
+        font-size: 43px;
+
+        line-height: 1;
+
+        letter-spacing: -1px;
+    }
+
+    .about-page-hero-content p {
+        max-width: 380px;
+
+        margin-top: 18px;
+
+        font-size: 10px;
+    }
+
+    /* INTRO */
+
+    .about-intro {
+        padding: 55px 0;
+    }
+
+    .about-intro-container {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 38px;
+    }
+
+    .about-intro-image {
+        order: 1;
+    }
+
+    .about-intro-content {
+        order: 2;
+    }
+
+    .about-intro-image::before,
+    .about-intro-image::after {
+        width: 50px;
+        height: 50px;
+    }
+
+    .about-intro-content h2,
+    .about-approach-content h2,
+    .about-real-estate-content h2,
+    .about-section-heading h2 {
+        font-size: 29px;
+    }
+
+    .about-eyebrow {
+        font-size: 9px;
+
+        letter-spacing: 1.3px;
+    }
+
+    .about-line {
+        width: 38px;
+
+        height: 2px;
+
+        margin: 13px 0 17px;
+    }
+
+    .about-intro-content p,
+    .about-approach-content p,
+    .about-real-estate-content p,
+    .about-vision-box p {
+        font-size: 10.5px;
+
+        line-height: 1.8;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+
+        gap: 11px;
+    }
+
+    .about-features div {
+        font-size: 10px;
+    }
+
+    /* EXPERTISE */
+
+    .about-expertise {
+        padding: 55px 0;
+    }
+
+    .about-section-heading {
+        width: 88%;
+
+        margin-bottom: 30px;
+    }
+
+    .about-section-heading p {
+        font-size: 10.5px;
+
+        line-height: 1.7;
+    }
+
+    .about-expertise-container {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 13px;
+    }
+
+    .about-expertise-card {
+        min-height: auto;
+
+        padding: 24px 20px;
+    }
+
+    .about-card-icon {
+        width: 46px;
+
+        height: 46px;
+
+        margin-bottom: 15px;
+    }
+
+    .about-card-icon svg {
+        width: 23px;
+
+        height: 23px;
+    }
+
+    .about-expertise-card h3 {
+        font-size: 14px;
+    }
+
+    .about-expertise-card p {
+        font-size: 10px;
+
+        line-height: 1.75;
+    }
+
+    /* PROJECT MARKETING */
+
+    .about-approach {
+        padding: 55px 0;
+    }
+
+    .about-approach-container {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .about-approach-content {
+        order: 2;
+    }
+
+    .about-approach-image {
+        order: 1;
+    }
+
+    .about-button {
+        width: 100%;
+
+        min-height: 44px;
+
+        font-size: 9px;
+    }
+
+    /* REAL ESTATE */
+
+    .about-real-estate {
+        padding: 55px 0;
+    }
+
+    .about-real-estate-container {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .about-real-estate-image {
+        order: 1;
+    }
+
+    .about-real-estate-content {
+        order: 2;
+    }
+
+    /* VISION */
+
+    .about-vision {
+        padding: 55px 0;
+    }
+
+    .about-vision-container {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .about-vision-box {
+        padding: 27px 20px;
+    }
+
+    .about-vision-box h2 {
+        font-size: 27px;
+    }
+
+    /* CTA */
+
+    .about-cta {
+        padding: 45px 0;
+    }
+
+    .about-cta-container {
+        width: 88%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 22px;
+    }
+
+    .about-cta h2 {
+        font-size: 27px;
+    }
+
+    .about-cta-button {
+        width: 100%;
+
+        min-height: 44px;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .about-page-hero {
+        min-height: 320px;
+    }
+
+    .about-page-hero-content {
+        width: 90%;
+    }
+
+    .about-page-hero-content h1 {
+        font-size: 37px;
+    }
+
+    .about-page-hero-content p {
+        font-size: 9px;
+    }
+
+    .about-intro,
+    .about-expertise,
+    .about-approach,
+    .about-real-estate,
+    .about-vision {
+        padding: 48px 0;
+    }
+
+    .about-intro-container,
+    .about-approach-container,
+    .about-real-estate-container,
+    .about-expertise-container,
+    .about-vision-container {
+        width: 90%;
+    }
+
+    .about-intro-content h2,
+    .about-approach-content h2,
+    .about-real-estate-content h2,
+    .about-section-heading h2 {
+        font-size: 26px;
+    }
+
+    .about-vision-box h2 {
+        font-size: 25px;
+    }
+
+    .about-expertise-card {
+        padding: 21px 17px;
+    }
+
+    .about-expertise-card h3 {
+        font-size: 13px;
+    }
+
+    .about-expertise-card p {
+        font-size: 9px;
+    }
+
+    .about-cta h2 {
+        font-size: 24px;
+    }
+}
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .about-page-hero {
+        min-height: 300px;
+    }
+
+    .about-page-hero-content h1 {
+        font-size: 33px;
+    }
+
+    .about-intro-content h2,
+    .about-approach-content h2,
+    .about-real-estate-content h2,
+    .about-section-heading h2 {
+        font-size: 24px;
+    }
+
+    .about-expertise-card p,
+    .about-intro-content p,
+    .about-approach-content p,
+    .about-real-estate-content p,
+    .about-vision-box p {
+        font-size: 9px;
+    }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .about-expertise-card,
+    .about-approach-image img,
+    .about-real-estate-image img,
+    .about-vision-box,
+    .about-button,
+    .about-cta-button {
+        transition: none;
+    }
+}

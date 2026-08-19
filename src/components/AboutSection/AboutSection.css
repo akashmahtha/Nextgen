@@ -1,0 +1,363 @@
+/* =========================================================
+   NEXTGEN CIVIL - ABOUT SECTION
+========================================================= */
+
+.about-section {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.about-container {
+    width: min(1250px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.about-content {
+    max-width: 530px;
+}
+
+.about-eyebrow {
+    display: inline-block;
+
+    margin-bottom: 13px;
+
+    color: #087f4e;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+}
+
+.about-content h2 {
+    margin: 0;
+
+    color: #151515;
+
+    font-size: clamp(32px, 3vw, 43px);
+
+    line-height: 1.12;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.about-content h2 span {
+    display: block;
+}
+
+/* =========================================================
+   TITLE LINE
+========================================================= */
+
+.about-title-line {
+    width: 48px;
+
+    height: 3px;
+
+    margin: 17px 0 22px;
+
+    background: #087f4e;
+}
+
+/* =========================================================
+   PARAGRAPHS
+========================================================= */
+
+.about-content p {
+    margin: 0 0 15px;
+
+    color: #606060;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.about-button {
+    margin-top: 14px;
+
+    min-height: 46px;
+
+    padding: 0 19px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    border: 1px solid #087f4e;
+
+    color: #087f4e;
+
+    background: #ffffff;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.about-button:hover {
+    background: #087f4e;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   RIGHT VISUAL
+========================================================= */
+
+.about-visual {
+    position: relative;
+
+    min-height: 410px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.about-image-wrapper {
+    position: relative;
+
+    width: 100%;
+
+    height: 430px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 2;
+}
+
+.about-image {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    object-position: center;
+
+    mix-blend-mode: multiply;
+
+    filter:
+        grayscale(100%) contrast(0.85);
+
+    opacity: 0.72;
+}
+
+/* =========================================================
+   DECORATION
+========================================================= */
+
+.about-decoration {
+    position: absolute;
+
+    right: -30px;
+
+    bottom: 20px;
+
+    width: 260px;
+
+    height: 260px;
+
+    border: 1px solid rgba(8, 127, 78, 0.12);
+
+    z-index: 1;
+
+    transform: rotate(8deg);
+}
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+    .about-section {
+        padding: 75px 0;
+    }
+
+    .about-container {
+        gap: 50px;
+    }
+
+    .about-content h2 {
+        font-size: 36px;
+    }
+
+    .about-content p {
+        font-size: 13px;
+    }
+
+    .about-image-wrapper {
+        height: 360px;
+    }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+    .about-container {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .about-content {
+        max-width: 700px;
+    }
+
+    .about-content h2 {
+        font-size: 38px;
+    }
+
+    .about-visual {
+        min-height: 350px;
+    }
+
+    .about-image-wrapper {
+        height: 380px;
+    }
+
+    .about-decoration {
+        right: 5%;
+
+        width: 220px;
+        height: 220px;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .about-container {
+        width: 88%;
+
+        gap: 35px;
+    }
+
+    .about-eyebrow {
+        font-size: 10px;
+
+        letter-spacing: 1.1px;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+
+        letter-spacing: -0.6px;
+    }
+
+    .about-title-line {
+        width: 40px;
+
+        height: 2px;
+
+        margin: 14px 0 18px;
+    }
+
+    .about-content p {
+        font-size: 13px;
+
+        line-height: 1.7;
+    }
+
+    .about-button {
+        min-height: 44px;
+
+        padding: 0 16px;
+
+        font-size: 10px;
+    }
+
+    .about-visual {
+        min-height: 270px;
+    }
+
+    .about-image-wrapper {
+        height: 280px;
+    }
+
+    .about-decoration {
+        right: 0;
+
+        bottom: 0;
+
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+    .about-section {
+        padding: 50px 0;
+    }
+
+    .about-content h2 {
+        font-size: 27px;
+    }
+
+    .about-content p {
+        font-size: 12px;
+    }
+
+    .about-image-wrapper {
+        height: 240px;
+    }
+}

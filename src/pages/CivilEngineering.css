@@ -1,0 +1,1180 @@
+/* =========================================================
+   NEXT GEN ENGINEERING CONSULTANCY SERVICES
+   CIVIL ENGINEERING PAGE
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+.ce-page {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.ce-page-hero {
+    position: relative;
+
+    width: 100%;
+    min-height: 470px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(90deg,
+            rgba(2, 40, 29, 0.94),
+            rgba(2, 40, 29, 0.58),
+            rgba(2, 40, 29, 0.12)),
+        url("/images/hero-2.jpg") center / cover no-repeat;
+
+    overflow: hidden;
+}
+
+.ce-page-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(90deg,
+            rgba(2, 40, 29, 0.62),
+            transparent);
+
+    pointer-events: none;
+}
+
+.ce-page-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1250px, 90%);
+
+    margin: 0 auto;
+
+    color: #ffffff;
+}
+
+.ce-page-hero-content span {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #75d49a;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    line-height: 1.5;
+}
+
+.ce-page-hero-content h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(48px, 6vw, 80px);
+
+    line-height: 0.98;
+
+    font-weight: 300;
+
+    letter-spacing: -2px;
+}
+
+.ce-page-hero-content h1 strong {
+    color: #75d49a;
+
+    font-weight: 800;
+}
+
+.ce-page-hero-content p {
+    max-width: 560px;
+
+    margin: 23px 0 0;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+/* =========================================================
+   COMMON
+========================================================= */
+
+.ce-eyebrow {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #087f4e;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.6px;
+
+    line-height: 1.4;
+}
+
+.ce-line {
+    width: 45px;
+
+    height: 3px;
+
+    margin: 17px 0 20px;
+
+    background: #087f4e;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.ce-intro {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #ffffff;
+}
+
+.ce-intro-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+.ce-intro-content h2,
+.ce-approach-content h2,
+.ce-process-heading h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3.2vw, 43px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.ce-intro-content h2 span,
+.ce-approach-content h2 span,
+.ce-process-heading h2 span {
+    color: #087f4e;
+}
+
+.ce-intro-content p,
+.ce-approach-content p {
+    margin: 0 0 15px;
+
+    color: #696969;
+
+    font-size: 13px;
+
+    line-height: 1.85;
+}
+
+/* =========================================================
+   INTRO IMAGE
+========================================================= */
+
+.ce-intro-image {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.ce-intro-image::before {
+    content: "";
+
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+
+    z-index: 2;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    pointer-events: none;
+}
+
+.ce-intro-image img {
+    width: 100%;
+
+    aspect-ratio: 1.25 / 1;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.ce-intro-image:hover img {
+    transform: scale(1.04);
+}
+
+/* =========================================================
+   CAPABILITIES
+========================================================= */
+
+.ce-capabilities {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #f5f8f6;
+}
+
+.ce-section-heading {
+    width: min(750px, 90%);
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.ce-section-heading .ce-line {
+    margin: 17px auto 18px;
+}
+
+.ce-section-heading h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3.2vw, 43px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.ce-section-heading h2 span {
+    color: #087f4e;
+}
+
+.ce-section-heading p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #707070;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+}
+
+/* =========================================================
+   CAPABILITY GRID
+========================================================= */
+
+.ce-capabilities-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+/* =========================================================
+   CAPABILITY CARD
+========================================================= */
+
+.ce-capability-card {
+    min-height: 275px;
+
+    padding: 28px 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e8e3;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.ce-capability-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #bdd9c9;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.ce-capability-top {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    margin-bottom: 22px;
+}
+
+.ce-capability-top>span {
+    color: #a0aaa4;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.ce-capability-icon {
+    width: 54px;
+
+    height: 54px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #e5f3eb;
+
+    color: #087f4e;
+}
+
+.ce-capability-icon svg {
+    width: 26px;
+
+    height: 26px;
+
+    stroke-width: 1.7;
+}
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.ce-capability-card h3 {
+    margin: 0 0 12px;
+
+    color: #171717;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+}
+
+.ce-capability-card p {
+    margin: 0;
+
+    color: #6d6d6d;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+}
+
+/* =========================================================
+   APPROACH
+========================================================= */
+
+.ce-approach {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #ffffff;
+}
+
+.ce-approach-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+/* =========================================================
+   APPROACH IMAGE
+========================================================= */
+
+.ce-approach-image {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.ce-approach-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    pointer-events: none;
+}
+
+.ce-approach-image img {
+    width: 100%;
+
+    aspect-ratio: 1.25 / 1;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.ce-approach-image:hover img {
+    transform: scale(1.04);
+}
+
+/* =========================================================
+   APPROACH CONTENT
+========================================================= */
+
+.ce-approach-content h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3.2vw, 43px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.ce-approach-content h2 span {
+    color: #087f4e;
+}
+
+.ce-approach-content p {
+    margin: 0 0 15px;
+
+    color: #696969;
+
+    font-size: 13px;
+
+    line-height: 1.85;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.ce-button {
+    min-height: 45px;
+
+    margin-top: 12px;
+
+    padding: 0 20px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    background: #087f4e;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.ce-button:hover {
+    background: #075f3b;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.ce-process {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #f5f8f6;
+}
+
+.ce-process-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+}
+
+.ce-process-heading {
+    margin-bottom: 45px;
+}
+
+.ce-process-heading h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3.2vw, 43px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.ce-process-heading h2 span {
+    color: #087f4e;
+}
+
+/* =========================================================
+   PROCESS GRID
+========================================================= */
+
+.ce-process-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.ce-process-card {
+    min-height: 220px;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e8e3;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.ce-process-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.06);
+}
+
+.ce-process-card>span {
+    color: #087f4e;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.ce-process-card h3 {
+    margin: 35px 0 10px;
+
+    color: #171717;
+
+    font-size: 16px;
+
+    font-weight: 800;
+}
+
+.ce-process-card p {
+    margin: 0;
+
+    color: #707070;
+
+    font-size: 10px;
+
+    line-height: 1.8;
+}
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.ce-cta {
+    width: 100%;
+
+    padding: 60px 0;
+
+    background: #063b2b;
+}
+
+.ce-cta-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.ce-cta-container>div>span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #75d49a;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.ce-cta h2 {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(25px, 3vw, 40px);
+
+    line-height: 1.15;
+
+    font-weight: 400;
+}
+
+.ce-cta h2 strong {
+    color: #75d49a;
+
+    font-weight: 800;
+}
+
+.ce-cta-button {
+    flex-shrink: 0;
+
+    min-height: 46px;
+
+    padding: 0 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    background: #ffffff;
+
+    color: #063b2b;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.ce-cta-button:hover {
+    background: #75d49a;
+
+    color: #063b2b;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   LARGE LAPTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .ce-intro-container,
+    .ce-capabilities-container,
+    .ce-approach-container,
+    .ce-process-container,
+    .ce-cta-container {
+        width: 92%;
+    }
+
+    .ce-intro-container,
+    .ce-approach-container {
+        gap: 50px;
+    }
+
+    .ce-capability-card {
+        padding: 25px 20px;
+    }
+
+    .ce-capability-card h3 {
+        font-size: 15px;
+    }
+
+    .ce-capability-card p {
+        font-size: 10px;
+    }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .ce-page-hero {
+        min-height: 400px;
+    }
+
+    .ce-intro,
+    .ce-capabilities,
+    .ce-approach,
+    .ce-process {
+        padding: 70px 0;
+    }
+
+    .ce-intro-container,
+    .ce-approach-container {
+        width: 88%;
+
+        gap: 40px;
+    }
+
+    .ce-capabilities-container {
+        width: 88%;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ce-process-container {
+        width: 88%;
+    }
+
+    .ce-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ce-intro-content p,
+    .ce-approach-content p,
+    .ce-section-heading p {
+        font-size: 11px;
+    }
+
+    .ce-cta-container {
+        width: 88%;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    /* HERO */
+
+    .ce-page-hero {
+        min-height: 360px;
+
+        background-position: center;
+    }
+
+    .ce-page-hero-content {
+        width: 88%;
+    }
+
+    .ce-page-hero-content span {
+        font-size: 9px;
+
+        letter-spacing: 1.3px;
+    }
+
+    .ce-page-hero-content h1 {
+        font-size: 45px;
+
+        letter-spacing: -1px;
+    }
+
+    .ce-page-hero-content p {
+        max-width: 380px;
+
+        margin-top: 18px;
+
+        font-size: 10px;
+    }
+
+    /* COMMON */
+
+    .ce-eyebrow {
+        font-size: 9px;
+
+        letter-spacing: 1.3px;
+    }
+
+    .ce-line {
+        width: 38px;
+
+        height: 2px;
+
+        margin: 13px 0 17px;
+    }
+
+    /* INTRO */
+
+    .ce-intro {
+        padding: 55px 0;
+    }
+
+    .ce-intro-container {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .ce-intro-content h2,
+    .ce-approach-content h2,
+    .ce-process-heading h2,
+    .ce-section-heading h2 {
+        font-size: 29px;
+    }
+
+    .ce-intro-content p,
+    .ce-approach-content p,
+    .ce-section-heading p {
+        font-size: 10.5px;
+
+        line-height: 1.8;
+    }
+
+    /* CAPABILITIES */
+
+    .ce-capabilities {
+        padding: 55px 0;
+    }
+
+    .ce-section-heading {
+        width: 88%;
+
+        margin-bottom: 30px;
+    }
+
+    .ce-capabilities-container {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 13px;
+    }
+
+    .ce-capability-card {
+        min-height: auto;
+
+        padding: 23px 20px;
+    }
+
+    .ce-capability-top {
+        margin-bottom: 17px;
+    }
+
+    .ce-capability-icon {
+        width: 48px;
+
+        height: 48px;
+    }
+
+    .ce-capability-icon svg {
+        width: 23px;
+
+        height: 23px;
+    }
+
+    .ce-capability-card h3 {
+        font-size: 14px;
+    }
+
+    .ce-capability-card p {
+        font-size: 10px;
+
+        line-height: 1.75;
+    }
+
+    /* APPROACH */
+
+    .ce-approach {
+        padding: 55px 0;
+    }
+
+    .ce-approach-container {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .ce-approach-image {
+        order: 1;
+    }
+
+    .ce-approach-content {
+        order: 2;
+    }
+
+    .ce-button {
+        width: 100%;
+
+        min-height: 44px;
+
+        font-size: 9px;
+    }
+
+    /* PROCESS */
+
+    .ce-process {
+        padding: 55px 0;
+    }
+
+    .ce-process-container {
+        width: 88%;
+    }
+
+    .ce-process-heading {
+        margin-bottom: 30px;
+    }
+
+    .ce-process-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .ce-process-card {
+        min-height: 165px;
+
+        padding: 22px;
+    }
+
+    .ce-process-card h3 {
+        margin-top: 25px;
+
+        font-size: 14px;
+    }
+
+    .ce-process-card p {
+        font-size: 9.5px;
+
+        line-height: 1.75;
+    }
+
+    /* CTA */
+
+    .ce-cta {
+        padding: 45px 0;
+    }
+
+    .ce-cta-container {
+        width: 88%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 22px;
+    }
+
+    .ce-cta h2 {
+        font-size: 27px;
+    }
+
+    .ce-cta-button {
+        width: 100%;
+
+        min-height: 44px;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .ce-page-hero {
+        min-height: 320px;
+    }
+
+    .ce-page-hero-content {
+        width: 90%;
+    }
+
+    .ce-page-hero-content h1 {
+        font-size: 38px;
+    }
+
+    .ce-page-hero-content p {
+        font-size: 9px;
+    }
+
+    .ce-intro,
+    .ce-capabilities,
+    .ce-approach,
+    .ce-process {
+        padding: 48px 0;
+    }
+
+    .ce-intro-container,
+    .ce-capabilities-container,
+    .ce-approach-container,
+    .ce-process-container,
+    .ce-cta-container {
+        width: 90%;
+    }
+
+    .ce-intro-content h2,
+    .ce-approach-content h2,
+    .ce-process-heading h2,
+    .ce-section-heading h2 {
+        font-size: 26px;
+    }
+
+    .ce-intro-content p,
+    .ce-approach-content p,
+    .ce-section-heading p {
+        font-size: 9.5px;
+    }
+
+    .ce-capability-card {
+        padding: 21px 17px;
+    }
+
+    .ce-capability-card h3 {
+        font-size: 13px;
+    }
+
+    .ce-capability-card p {
+        font-size: 9px;
+    }
+
+    .ce-process-card {
+        min-height: 150px;
+
+        padding: 18px;
+    }
+
+    .ce-cta h2 {
+        font-size: 24px;
+    }
+}
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .ce-page-hero {
+        min-height: 300px;
+    }
+
+    .ce-page-hero-content h1 {
+        font-size: 33px;
+    }
+
+    .ce-intro-content h2,
+    .ce-approach-content h2,
+    .ce-process-heading h2,
+    .ce-section-heading h2 {
+        font-size: 24px;
+    }
+
+    .ce-capability-card p,
+    .ce-intro-content p,
+    .ce-approach-content p,
+    .ce-section-heading p {
+        font-size: 8.8px;
+    }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .ce-intro-image img,
+    .ce-approach-image img,
+    .ce-capability-card,
+    .ce-process-card,
+    .ce-button,
+    .ce-cta-button {
+        transition: none;
+    }
+}

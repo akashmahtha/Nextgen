@@ -1,0 +1,1161 @@
+/* =========================================================
+   NEXT GEN ENGINEERING CONSULTANCY SERVICES
+   REAL ESTATE SOLUTIONS PAGE
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+.re-page {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.re-page-hero {
+    position: relative;
+
+    width: 100%;
+    min-height: 470px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(90deg,
+            rgba(2, 40, 29, 0.93),
+            rgba(2, 40, 29, 0.56),
+            rgba(2, 40, 29, 0.12)),
+        url("/images/hero-1.jpg") center / cover no-repeat;
+
+    overflow: hidden;
+}
+
+.re-page-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(90deg,
+            rgba(2, 40, 29, 0.62),
+            transparent);
+
+    pointer-events: none;
+}
+
+.re-page-hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: min(1250px, 90%);
+    margin: 0 auto;
+
+    color: #ffffff;
+}
+
+.re-page-hero-content span {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #75d49a;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.re-page-hero-content h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(46px, 6vw, 78px);
+
+    line-height: 0.98;
+
+    font-weight: 300;
+
+    letter-spacing: -2px;
+}
+
+.re-page-hero-content h1 strong {
+    color: #75d49a;
+    font-weight: 800;
+}
+
+.re-page-hero-content p {
+    max-width: 540px;
+
+    margin: 23px 0 0;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* =========================================================
+   COMMON
+========================================================= */
+
+.re-eyebrow {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #087f4e;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.6px;
+    line-height: 1.4;
+}
+
+.re-line {
+    width: 45px;
+    height: 3px;
+
+    margin: 17px 0 20px;
+
+    background: #087f4e;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.re-intro {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #ffffff;
+}
+
+.re-intro-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+.re-intro-content h2,
+.re-leasing-content h2,
+.re-requirement-content h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3.2vw, 43px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.re-intro-content h2 span,
+.re-leasing-content h2 span,
+.re-requirement-content h2 span {
+    color: #087f4e;
+}
+
+.re-intro-content p,
+.re-leasing-content p,
+.re-requirement-content p {
+    margin: 0 0 15px;
+
+    color: #696969;
+
+    font-size: 13px;
+
+    line-height: 1.85;
+}
+
+/* =========================================================
+   INTRO IMAGE
+========================================================= */
+
+.re-intro-image {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.re-intro-image::before {
+    content: "";
+
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+
+    z-index: 2;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    pointer-events: none;
+}
+
+.re-intro-image img {
+    width: 100%;
+
+    aspect-ratio: 1.25 / 1;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.re-intro-image:hover img {
+    transform: scale(1.04);
+}
+
+/* =========================================================
+   PROPERTY SECTION
+========================================================= */
+
+.re-properties {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #f5f8f6;
+}
+
+.re-section-heading {
+    width: min(750px, 90%);
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.re-section-heading .re-line {
+    margin: 17px auto 18px;
+}
+
+.re-section-heading h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3.2vw, 43px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.re-section-heading h2 span {
+    color: #087f4e;
+}
+
+.re-section-heading p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #707070;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+}
+
+/* =========================================================
+   PROPERTY GRID
+========================================================= */
+
+.re-properties-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+/* =========================================================
+   PROPERTY CARD
+========================================================= */
+
+.re-property-card {
+    min-height: 275px;
+
+    padding: 28px 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e8e3;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.re-property-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #bdd9c9;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+/* =========================================================
+   PROPERTY TOP
+========================================================= */
+
+.re-property-top {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    margin-bottom: 22px;
+}
+
+.re-property-top>span {
+    color: #a0aaa4;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.re-property-icon {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #e5f3eb;
+
+    color: #087f4e;
+}
+
+.re-property-icon svg {
+    width: 26px;
+    height: 26px;
+
+    stroke-width: 1.7;
+}
+
+/* =========================================================
+   PROPERTY CONTENT
+========================================================= */
+
+.re-property-card h3 {
+    margin: 0 0 12px;
+
+    color: #171717;
+
+    font-size: 16px;
+    font-weight: 800;
+
+    line-height: 1.3;
+}
+
+.re-property-card p {
+    margin: 0;
+
+    color: #6d6d6d;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+}
+
+/* =========================================================
+   LEASING & SELLING
+========================================================= */
+
+.re-leasing {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #ffffff;
+}
+
+.re-leasing-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+/* =========================================================
+   LEASING IMAGE
+========================================================= */
+
+.re-leasing-image {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.re-leasing-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    pointer-events: none;
+}
+
+.re-leasing-image img {
+    width: 100%;
+
+    aspect-ratio: 1.25 / 1;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.re-leasing-image:hover img {
+    transform: scale(1.04);
+}
+
+/* =========================================================
+   TRANSACTION POINTS
+========================================================= */
+
+.re-transaction-points {
+    margin-top: 25px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+}
+
+.re-transaction-points>div {
+    min-height: 62px;
+
+    padding: 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    background: #f5f8f6;
+
+    border: 1px solid #e0e7e2;
+}
+
+.re-transaction-points>div>span {
+    color: #087f4e;
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.re-transaction-points p {
+    margin: 0;
+
+    color: #444444;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    line-height: 1.5;
+}
+
+/* =========================================================
+   REQUIREMENT SECTION
+========================================================= */
+
+.re-requirement {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #f5f8f6;
+}
+
+.re-requirement-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+.re-requirement-content h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3.2vw, 43px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.re-requirement-content h2 span {
+    color: #087f4e;
+}
+
+.re-requirement-content p {
+    max-width: 480px;
+
+    margin: 0;
+
+    color: #696969;
+
+    font-size: 13px;
+
+    line-height: 1.85;
+}
+
+/* =========================================================
+   REQUIREMENT GRID
+========================================================= */
+
+.re-requirement-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+.re-requirement-card {
+    min-height: 230px;
+
+    padding: 28px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e8e3;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.re-requirement-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 30px rgba(0, 0, 0, 0.06);
+}
+
+.re-requirement-card>svg {
+    color: #087f4e;
+
+    stroke-width: 1.7;
+}
+
+.re-requirement-card h3 {
+    margin: 35px 0 10px;
+
+    color: #171717;
+
+    font-size: 17px;
+
+    font-weight: 800;
+}
+
+.re-requirement-card p {
+    margin: 0;
+
+    color: #707070;
+
+    font-size: 10px;
+
+    line-height: 1.75;
+}
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.re-cta {
+    width: 100%;
+
+    padding: 60px 0;
+
+    background: #063b2b;
+}
+
+.re-cta-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.re-cta-container>div>span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #75d49a;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.re-cta h2 {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(25px, 3vw, 40px);
+
+    line-height: 1.15;
+
+    font-weight: 400;
+}
+
+.re-cta h2 strong {
+    color: #75d49a;
+
+    font-weight: 800;
+}
+
+.re-cta-button {
+    flex-shrink: 0;
+
+    min-height: 46px;
+
+    padding: 0 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    background: #ffffff;
+
+    color: #063b2b;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.re-cta-button:hover {
+    background: #75d49a;
+
+    color: #063b2b;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   LARGE LAPTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .re-intro-container,
+    .re-properties-container,
+    .re-leasing-container,
+    .re-requirement-container {
+        width: 92%;
+    }
+
+    .re-intro-container,
+    .re-leasing-container,
+    .re-requirement-container {
+        gap: 50px;
+    }
+
+    .re-property-card {
+        padding: 25px 20px;
+    }
+
+    .re-property-card h3 {
+        font-size: 15px;
+    }
+
+    .re-property-card p {
+        font-size: 10px;
+    }
+
+    .re-requirement-card {
+        padding: 22px;
+    }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .re-page-hero {
+        min-height: 400px;
+    }
+
+    .re-intro,
+    .re-properties,
+    .re-leasing,
+    .re-requirement {
+        padding: 70px 0;
+    }
+
+    .re-intro-container,
+    .re-leasing-container,
+    .re-requirement-container {
+        width: 88%;
+
+        gap: 40px;
+    }
+
+    .re-properties-container {
+        width: 88%;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .re-requirement-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .re-requirement-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .re-intro-content p,
+    .re-leasing-content p,
+    .re-requirement-content p {
+        font-size: 11px;
+    }
+
+    .re-cta-container {
+        width: 88%;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    /* HERO */
+
+    .re-page-hero {
+        min-height: 360px;
+
+        background-position: center;
+    }
+
+    .re-page-hero-content {
+        width: 88%;
+    }
+
+    .re-page-hero-content span {
+        font-size: 9px;
+
+        letter-spacing: 1.3px;
+    }
+
+    .re-page-hero-content h1 {
+        font-size: 44px;
+
+        letter-spacing: -1px;
+    }
+
+    .re-page-hero-content p {
+        max-width: 380px;
+
+        margin-top: 18px;
+
+        font-size: 10px;
+    }
+
+    /* COMMON */
+
+    .re-eyebrow {
+        font-size: 9px;
+
+        letter-spacing: 1.3px;
+    }
+
+    .re-line {
+        width: 38px;
+
+        height: 2px;
+
+        margin: 13px 0 17px;
+    }
+
+    /* INTRO */
+
+    .re-intro {
+        padding: 55px 0;
+    }
+
+    .re-intro-container {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .re-intro-content h2,
+    .re-leasing-content h2,
+    .re-requirement-content h2,
+    .re-section-heading h2 {
+        font-size: 29px;
+    }
+
+    .re-intro-content p,
+    .re-leasing-content p,
+    .re-requirement-content p,
+    .re-section-heading p {
+        font-size: 10.5px;
+
+        line-height: 1.8;
+    }
+
+    /* PROPERTY */
+
+    .re-properties {
+        padding: 55px 0;
+    }
+
+    .re-section-heading {
+        width: 88%;
+
+        margin-bottom: 30px;
+    }
+
+    .re-properties-container {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 13px;
+    }
+
+    .re-property-card {
+        min-height: auto;
+
+        padding: 23px 20px;
+    }
+
+    .re-property-top {
+        margin-bottom: 17px;
+    }
+
+    .re-property-top>span {
+        font-size: 9px;
+    }
+
+    .re-property-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .re-property-icon svg {
+        width: 23px;
+        height: 23px;
+    }
+
+    .re-property-card h3 {
+        font-size: 14px;
+    }
+
+    .re-property-card p {
+        font-size: 10px;
+
+        line-height: 1.75;
+    }
+
+    /* LEASING */
+
+    .re-leasing {
+        padding: 55px 0;
+    }
+
+    .re-leasing-container {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .re-leasing-image {
+        order: 1;
+    }
+
+    .re-leasing-content {
+        order: 2;
+    }
+
+    .re-transaction-points {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+    .re-transaction-points>div {
+        min-height: 55px;
+
+        padding: 11px;
+    }
+
+    .re-transaction-points p {
+        font-size: 9px;
+    }
+
+    /* REQUIREMENT */
+
+    .re-requirement {
+        padding: 55px 0;
+    }
+
+    .re-requirement-container {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .re-requirement-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .re-requirement-card {
+        min-height: 170px;
+
+        padding: 22px;
+    }
+
+    .re-requirement-card h3 {
+        margin-top: 25px;
+
+        font-size: 16px;
+    }
+
+    .re-requirement-card p {
+        font-size: 9.5px;
+    }
+
+    /* CTA */
+
+    .re-cta {
+        padding: 45px 0;
+    }
+
+    .re-cta-container {
+        width: 88%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 22px;
+    }
+
+    .re-cta h2 {
+        font-size: 27px;
+    }
+
+    .re-cta-button {
+        width: 100%;
+
+        min-height: 44px;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .re-page-hero {
+        min-height: 320px;
+    }
+
+    .re-page-hero-content {
+        width: 90%;
+    }
+
+    .re-page-hero-content h1 {
+        font-size: 38px;
+    }
+
+    .re-page-hero-content p {
+        font-size: 9px;
+    }
+
+    .re-intro,
+    .re-properties,
+    .re-leasing,
+    .re-requirement {
+        padding: 48px 0;
+    }
+
+    .re-intro-container,
+    .re-properties-container,
+    .re-leasing-container,
+    .re-requirement-container,
+    .re-cta-container {
+        width: 90%;
+    }
+
+    .re-intro-content h2,
+    .re-leasing-content h2,
+    .re-requirement-content h2,
+    .re-section-heading h2 {
+        font-size: 26px;
+    }
+
+    .re-property-card {
+        padding: 21px 17px;
+    }
+
+    .re-property-card h3 {
+        font-size: 13px;
+    }
+
+    .re-property-card p {
+        font-size: 9px;
+    }
+
+    .re-intro-content p,
+    .re-leasing-content p,
+    .re-requirement-content p,
+    .re-section-heading p {
+        font-size: 9.5px;
+    }
+
+    .re-cta h2 {
+        font-size: 24px;
+    }
+}
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .re-page-hero {
+        min-height: 300px;
+    }
+
+    .re-page-hero-content h1 {
+        font-size: 33px;
+    }
+
+    .re-intro-content h2,
+    .re-leasing-content h2,
+    .re-requirement-content h2,
+    .re-section-heading h2 {
+        font-size: 24px;
+    }
+
+    .re-property-card p,
+    .re-intro-content p,
+    .re-leasing-content p,
+    .re-requirement-content p,
+    .re-section-heading p {
+        font-size: 9px;
+    }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .re-intro-image img,
+    .re-leasing-image img,
+    .re-property-card,
+    .re-requirement-card,
+    .re-cta-button {
+        transition: none;
+    }
+}

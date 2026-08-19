@@ -1,0 +1,333 @@
+/* =========================================================
+   NEXTGEN CIVIL - QUICK LINKS
+========================================================= */
+
+.quick-links {
+    width: 100%;
+
+    background: #ffffff;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.quick-links-container {
+    width: min(1400px, 92%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.quick-link-card {
+    min-height: 125px;
+
+    padding: 22px 20px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    background: #ffffff;
+
+    border-right: 1px solid #e9eee9;
+
+    color: #151515;
+
+    overflow: hidden;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.quick-link-card:last-child {
+    border-right: none;
+}
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.quick-link-icon {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #087f4e;
+
+    border: 1px solid #dce8df;
+
+    background: #f7faf8;
+
+    border-radius: 50%;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.quick-link-content {
+    flex: 1;
+}
+
+.quick-link-content h3 {
+    margin: 0 0 6px;
+
+    color: #161616;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.4px;
+}
+
+.quick-link-content p {
+    margin: 0;
+
+    color: #666666;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+/* =========================================================
+   BOTTOM LINE
+========================================================= */
+
+.quick-link-line {
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    width: 0;
+    height: 3px;
+
+    transform: translateX(-50%);
+
+    background: #087f4e;
+
+    transition: width 0.3s ease;
+}
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.quick-link-card:hover {
+    background: #fbfdfb;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.07);
+
+    z-index: 2;
+}
+
+.quick-link-card:hover .quick-link-icon {
+    background: #087f4e;
+
+    border-color: #087f4e;
+
+    color: #ffffff;
+
+    transform: scale(1.05);
+}
+
+.quick-link-card:hover .quick-link-line {
+    width: 55px;
+}
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+    .quick-links-container {
+        width: 94%;
+    }
+
+    .quick-link-card {
+        padding: 18px 14px;
+
+        gap: 10px;
+    }
+
+    .quick-link-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .quick-link-content h3 {
+        font-size: 11px;
+    }
+
+    .quick-link-content p {
+        font-size: 10px;
+    }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+    .quick-links-container {
+        grid-template-columns: repeat(3, 1fr);
+
+        width: 92%;
+    }
+
+    .quick-link-card {
+        min-height: 115px;
+
+        border-bottom: 1px solid #e9eee9;
+    }
+
+    .quick-link-card:nth-child(3) {
+        border-right: none;
+    }
+
+    .quick-link-card:nth-child(4),
+    .quick-link-card:nth-child(5) {
+        border-bottom: none;
+    }
+
+    .quick-link-card:nth-child(4) {
+        border-right: 1px solid #e9eee9;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+    .quick-links {
+        padding: 0;
+    }
+
+    .quick-links-container {
+        width: 100%;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        box-shadow: none;
+    }
+
+    .quick-link-card {
+        min-height: 105px;
+
+        padding: 16px 12px;
+
+        gap: 10px;
+
+        border-right: 1px solid #e9eee9;
+
+        border-bottom: 1px solid #e9eee9;
+    }
+
+    .quick-link-card:nth-child(2n) {
+        border-right: none;
+    }
+
+    .quick-link-card:nth-child(4) {
+        border-right: none;
+    }
+
+    .quick-link-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .quick-link-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .quick-link-content h3 {
+        font-size: 10px;
+
+        margin-bottom: 4px;
+    }
+
+    .quick-link-content p {
+        font-size: 9px;
+
+        line-height: 1.4;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+    .quick-links-container {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-link-card {
+        min-height: 82px;
+
+        padding: 14px 20px;
+
+        justify-content: flex-start;
+
+        border-right: none !important;
+    }
+
+    .quick-link-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .quick-link-content h3 {
+        font-size: 11px;
+    }
+
+    .quick-link-content p {
+        font-size: 10px;
+
+        max-width: 230px;
+    }
+}

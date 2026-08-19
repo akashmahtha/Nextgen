@@ -1,0 +1,269 @@
+/* =========================================================
+   NEXTGEN CIVIL - STATS SECTION
+========================================================= */
+
+.stats-section {
+    position: relative;
+
+    width: 100%;
+
+    min-height: 185px;
+
+    background: #073c2b;
+
+    overflow: hidden;
+}
+
+/* =========================================================
+   BACKGROUND
+========================================================= */
+
+.stats-background {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(90deg,
+            rgba(3, 40, 29, 0.97),
+            rgba(3, 58, 42, 0.94));
+
+    z-index: 0;
+}
+
+.stats-background::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0.08;
+
+    background-image:
+        linear-gradient(120deg,
+            transparent 40%,
+            rgba(255, 255, 255, 0.5) 41%,
+            transparent 42%);
+
+    background-size: 90px 90px;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.stats-container {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1250px, 90%);
+
+    min-height: 185px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* =========================================================
+   STAT ITEM
+========================================================= */
+
+.stat-item {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.14);
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.stat-item:last-child {
+    border-right: none;
+}
+
+.stat-item:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.stat-icon {
+    margin-bottom: 8px;
+
+    color: #ffffff;
+
+    opacity: 0.95;
+}
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.stat-number {
+    margin-bottom: 3px;
+
+    color: #ffffff;
+
+    font-size: 28px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+}
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.stat-label {
+    color: rgba(255, 255, 255, 0.75);
+
+    font-size: 11px;
+
+    line-height: 1.4;
+
+    letter-spacing: 0.3px;
+}
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .stats-section,
+    .stats-container {
+        min-height: 165px;
+    }
+
+    .stats-container {
+        width: 92%;
+    }
+
+    .stat-number {
+        font-size: 25px;
+    }
+
+    .stat-icon svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .stat-label {
+        font-size: 10px;
+    }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .stats-section,
+    .stats-container {
+        min-height: auto;
+    }
+
+    .stats-container {
+        width: 100%;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-item {
+        min-height: 145px;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .stat-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .stat-item:nth-child(3),
+    .stat-item:nth-child(4) {
+        border-bottom: none;
+    }
+
+    .stat-number {
+        font-size: 26px;
+    }
+
+    .stat-label {
+        font-size: 10px;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+    .stats-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stat-item {
+        min-height: 125px;
+    }
+
+    .stat-icon {
+        margin-bottom: 7px;
+    }
+
+    .stat-icon svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .stat-number {
+        font-size: 23px;
+    }
+
+    .stat-label {
+        font-size: 9px;
+
+        padding: 0 8px;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+    .stat-item {
+        min-height: 115px;
+    }
+
+    .stat-number {
+        font-size: 21px;
+    }
+
+    .stat-label {
+        font-size: 8px;
+    }
+}

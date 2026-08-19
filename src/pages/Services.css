@@ -1,0 +1,1255 @@
+/* =========================================================
+   NEXT GEN ENGINEERING CONSULTANCY SERVICES
+   SERVICES PAGE
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+.services-page {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.services-page-hero {
+    position: relative;
+
+    width: 100%;
+    min-height: 470px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(90deg,
+            rgba(2, 40, 29, 0.94),
+            rgba(2, 40, 29, 0.58),
+            rgba(2, 40, 29, 0.12)),
+        url("/images/hero-1.jpg") center / cover no-repeat;
+
+    overflow: hidden;
+}
+
+.services-page-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(90deg,
+            rgba(2, 40, 29, 0.62),
+            transparent);
+
+    pointer-events: none;
+}
+
+.services-page-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1250px, 90%);
+
+    margin: 0 auto;
+
+    color: #ffffff;
+}
+
+.services-page-hero-content span {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #75d49a;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    line-height: 1.5;
+}
+
+.services-page-hero-content h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(48px, 6vw, 80px);
+
+    line-height: 0.98;
+
+    font-weight: 300;
+
+    letter-spacing: -2px;
+}
+
+.services-page-hero-content h1 strong {
+    color: #75d49a;
+
+    font-weight: 800;
+}
+
+.services-page-hero-content p {
+    max-width: 530px;
+
+    margin: 23px 0 0;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+/* =========================================================
+   COMMON
+========================================================= */
+
+.services-eyebrow {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #087f4e;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.6px;
+
+    line-height: 1.4;
+}
+
+.services-line {
+    width: 45px;
+
+    height: 3px;
+
+    margin: 17px 0 20px;
+
+    background: #087f4e;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.services-intro {
+    width: 100%;
+
+    padding: 80px 0;
+
+    background: #ffffff;
+}
+
+.services-intro-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr auto;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+.services-intro-content h2,
+.services-approach-content h2,
+.services-process-heading h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3.2vw, 43px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.services-intro-content h2 span,
+.services-approach-content h2 span,
+.services-process-heading h2 span {
+    color: #087f4e;
+}
+
+.services-intro-content p,
+.services-approach-content p {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: #696969;
+
+    font-size: 13px;
+
+    line-height: 1.85;
+}
+
+/* =========================================================
+   INTRO NUMBER
+========================================================= */
+
+.services-intro-number {
+    width: 150px;
+
+    height: 150px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #063b2b;
+
+    border: 5px solid #e5f3eb;
+
+    outline: 1px solid #087f4e;
+
+    outline-offset: -13px;
+}
+
+.services-intro-number strong {
+    color: #75d49a;
+
+    font-size: 48px;
+
+    line-height: 1;
+
+    font-weight: 800;
+}
+
+.services-intro-number span {
+    margin-top: 8px;
+
+    color: #ffffff;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    line-height: 1.5;
+
+    letter-spacing: 1.5px;
+
+    text-align: center;
+}
+
+/* =========================================================
+   SERVICES LIST
+========================================================= */
+
+.services-list {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #f5f8f6;
+}
+
+.services-list-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+}
+
+.services-section-heading {
+    width: min(700px, 100%);
+
+    margin-bottom: 45px;
+}
+
+.services-section-heading h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3.2vw, 43px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.services-section-heading h2 span {
+    color: #087f4e;
+}
+
+.services-section-heading p {
+    margin: 0;
+
+    color: #707070;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+}
+
+/* =========================================================
+   SERVICES GRID
+========================================================= */
+
+.services-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.service-main-card {
+    min-height: 310px;
+
+    padding: 28px 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e8e3;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.service-main-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #bdd9c9;
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.07);
+}
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.service-main-top {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+}
+
+.service-main-number {
+    color: #a0aaa4;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.service-main-icon {
+    width: 56px;
+
+    height: 56px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #e5f3eb;
+
+    color: #087f4e;
+}
+
+.service-main-icon svg {
+    width: 27px;
+
+    height: 27px;
+
+    stroke-width: 1.6;
+}
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.service-main-content {
+    margin-top: 30px;
+}
+
+.service-main-content h3 {
+    margin: 0 0 12px;
+
+    color: #171717;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+}
+
+.service-main-content p {
+    margin: 0;
+
+    color: #6d6d6d;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+}
+
+/* =========================================================
+   SERVICE LINK
+========================================================= */
+
+.service-main-link {
+    margin-top: 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #087f4e;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.7px;
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease,
+        gap 0.25s ease;
+}
+
+.service-main-link:hover {
+    color: #063b2b;
+
+    gap: 12px;
+}
+
+/* =========================================================
+   APPROACH
+========================================================= */
+
+.services-approach {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #ffffff;
+}
+
+.services-approach-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+/* =========================================================
+   APPROACH IMAGE
+========================================================= */
+
+.services-approach-image {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.services-approach-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.75);
+
+    pointer-events: none;
+}
+
+.services-approach-image img {
+    width: 100%;
+
+    aspect-ratio: 1.25 / 1;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.services-approach-image:hover img {
+    transform: scale(1.04);
+}
+
+/* =========================================================
+   APPROACH CONTENT
+========================================================= */
+
+.services-approach-content h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3.2vw, 43px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.services-approach-content h2 span {
+    color: #087f4e;
+}
+
+.services-approach-content p {
+    margin: 0 0 15px;
+
+    color: #696969;
+
+    font-size: 13px;
+
+    line-height: 1.85;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.services-button {
+    min-height: 45px;
+
+    margin-top: 12px;
+
+    padding: 0 20px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    background: #087f4e;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.services-button:hover {
+    background: #075f3b;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.services-process {
+    width: 100%;
+
+    padding: 90px 0;
+
+    background: #f5f8f6;
+}
+
+.services-process-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+}
+
+.services-process-heading {
+    margin-bottom: 45px;
+}
+
+.services-process-heading h2 {
+    margin: 0;
+
+    color: #171717;
+
+    font-size: clamp(30px, 3.2vw, 43px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.services-process-heading h2 span {
+    color: #087f4e;
+}
+
+/* =========================================================
+   PROCESS GRID
+========================================================= */
+
+.services-process-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.services-process-card {
+    min-height: 220px;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e8e3;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.services-process-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.06);
+}
+
+.services-process-card>span {
+    color: #087f4e;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.services-process-card h3 {
+    margin: 35px 0 10px;
+
+    color: #171717;
+
+    font-size: 16px;
+
+    font-weight: 800;
+}
+
+.services-process-card p {
+    margin: 0;
+
+    color: #707070;
+
+    font-size: 10px;
+
+    line-height: 1.8;
+}
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.services-cta {
+    width: 100%;
+
+    padding: 60px 0;
+
+    background: #063b2b;
+}
+
+.services-cta-container {
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.services-cta-container>div>span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #75d49a;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.services-cta h2 {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(25px, 3vw, 40px);
+
+    line-height: 1.15;
+
+    font-weight: 400;
+}
+
+.services-cta h2 strong {
+    color: #75d49a;
+
+    font-weight: 800;
+}
+
+.services-cta-button {
+    flex-shrink: 0;
+
+    min-height: 46px;
+
+    padding: 0 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    background: #ffffff;
+
+    color: #063b2b;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.services-cta-button:hover {
+    background: #75d49a;
+
+    color: #063b2b;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   LARGE LAPTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .services-intro-container,
+    .services-list-container,
+    .services-approach-container,
+    .services-process-container,
+    .services-cta-container {
+        width: 92%;
+    }
+
+    .services-approach-container {
+        gap: 50px;
+    }
+
+    .service-main-card {
+        padding: 25px 20px;
+    }
+
+    .service-main-content h3 {
+        font-size: 15px;
+    }
+
+    .service-main-content p {
+        font-size: 10px;
+    }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .services-page-hero {
+        min-height: 400px;
+    }
+
+    .services-intro,
+    .services-list,
+    .services-approach,
+    .services-process {
+        padding: 70px 0;
+    }
+
+    .services-intro-container {
+        width: 88%;
+
+        gap: 40px;
+    }
+
+    .services-list-container {
+        width: 88%;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-approach-container {
+        width: 88%;
+
+        gap: 40px;
+    }
+
+    .services-process-container {
+        width: 88%;
+    }
+
+    .services-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-intro-content p,
+    .services-approach-content p,
+    .services-section-heading p {
+        font-size: 11px;
+    }
+
+    .services-cta-container {
+        width: 88%;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    /* HERO */
+
+    .services-page-hero {
+        min-height: 360px;
+
+        background-position: center;
+    }
+
+    .services-page-hero-content {
+        width: 88%;
+    }
+
+    .services-page-hero-content span {
+        font-size: 9px;
+
+        letter-spacing: 1.3px;
+    }
+
+    .services-page-hero-content h1 {
+        font-size: 45px;
+
+        letter-spacing: -1px;
+    }
+
+    .services-page-hero-content p {
+        max-width: 380px;
+
+        margin-top: 18px;
+
+        font-size: 10px;
+    }
+
+    /* COMMON */
+
+    .services-eyebrow {
+        font-size: 9px;
+
+        letter-spacing: 1.3px;
+    }
+
+    .services-line {
+        width: 38px;
+
+        height: 2px;
+
+        margin: 13px 0 17px;
+    }
+
+    /* INTRO */
+
+    .services-intro {
+        padding: 55px 0;
+    }
+
+    .services-intro-container {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .services-intro-content h2,
+    .services-approach-content h2,
+    .services-process-heading h2,
+    .services-section-heading h2 {
+        font-size: 29px;
+    }
+
+    .services-intro-content p,
+    .services-approach-content p,
+    .services-section-heading p {
+        font-size: 10.5px;
+
+        line-height: 1.8;
+    }
+
+    .services-intro-number {
+        width: 100px;
+
+        height: 100px;
+
+        border-width: 4px;
+    }
+
+    .services-intro-number strong {
+        font-size: 34px;
+    }
+
+    .services-intro-number span {
+        font-size: 7px;
+    }
+
+    /* SERVICES */
+
+    .services-list {
+        padding: 55px 0;
+    }
+
+    .services-list-container {
+        width: 88%;
+    }
+
+    .services-section-heading {
+        margin-bottom: 30px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+
+        gap: 13px;
+    }
+
+    .service-main-card {
+        min-height: auto;
+
+        padding: 23px 20px;
+    }
+
+    .service-main-icon {
+        width: 48px;
+
+        height: 48px;
+    }
+
+    .service-main-icon svg {
+        width: 23px;
+
+        height: 23px;
+    }
+
+    .service-main-content {
+        margin-top: 22px;
+    }
+
+    .service-main-content h3 {
+        font-size: 14px;
+    }
+
+    .service-main-content p {
+        font-size: 10px;
+
+        line-height: 1.75;
+    }
+
+    .service-main-link {
+        margin-top: 17px;
+
+        font-size: 8px;
+    }
+
+    /* APPROACH */
+
+    .services-approach {
+        padding: 55px 0;
+    }
+
+    .services-approach-container {
+        width: 88%;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .services-approach-image {
+        order: 1;
+    }
+
+    .services-approach-content {
+        order: 2;
+    }
+
+    .services-button {
+        width: 100%;
+
+        min-height: 44px;
+
+        font-size: 9px;
+    }
+
+    /* PROCESS */
+
+    .services-process {
+        padding: 55px 0;
+    }
+
+    .services-process-container {
+        width: 88%;
+    }
+
+    .services-process-heading {
+        margin-bottom: 30px;
+    }
+
+    .services-process-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .services-process-card {
+        min-height: 165px;
+
+        padding: 22px;
+    }
+
+    .services-process-card h3 {
+        margin-top: 25px;
+
+        font-size: 14px;
+    }
+
+    .services-process-card p {
+        font-size: 9.5px;
+
+        line-height: 1.75;
+    }
+
+    /* CTA */
+
+    .services-cta {
+        padding: 45px 0;
+    }
+
+    .services-cta-container {
+        width: 88%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 22px;
+    }
+
+    .services-cta h2 {
+        font-size: 27px;
+    }
+
+    .services-cta-button {
+        width: 100%;
+
+        min-height: 44px;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .services-page-hero {
+        min-height: 320px;
+    }
+
+    .services-page-hero-content {
+        width: 90%;
+    }
+
+    .services-page-hero-content h1 {
+        font-size: 38px;
+    }
+
+    .services-page-hero-content p {
+        font-size: 9px;
+    }
+
+    .services-intro,
+    .services-list,
+    .services-approach,
+    .services-process {
+        padding: 48px 0;
+    }
+
+    .services-intro-container,
+    .services-list-container,
+    .services-approach-container,
+    .services-process-container,
+    .services-cta-container {
+        width: 90%;
+    }
+
+    .services-intro-content h2,
+    .services-approach-content h2,
+    .services-process-heading h2,
+    .services-section-heading h2 {
+        font-size: 26px;
+    }
+
+    .services-intro-content p,
+    .services-approach-content p,
+    .services-section-heading p {
+        font-size: 9.5px;
+    }
+
+    .service-main-card {
+        padding: 21px 17px;
+    }
+
+    .service-main-content h3 {
+        font-size: 13px;
+    }
+
+    .service-main-content p {
+        font-size: 9px;
+    }
+
+    .services-process-card {
+        min-height: 150px;
+
+        padding: 18px;
+    }
+
+    .services-cta h2 {
+        font-size: 24px;
+    }
+}
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .services-page-hero {
+        min-height: 300px;
+    }
+
+    .services-page-hero-content h1 {
+        font-size: 33px;
+    }
+
+    .services-intro-content h2,
+    .services-approach-content h2,
+    .services-process-heading h2,
+    .services-section-heading h2 {
+        font-size: 24px;
+    }
+
+    .service-main-content p,
+    .services-intro-content p,
+    .services-approach-content p,
+    .services-section-heading p {
+        font-size: 8.8px;
+    }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .service-main-card,
+    .services-approach-image img,
+    .service-main-link,
+    .services-button,
+    .services-process-card,
+    .services-cta-button {
+        transition: none;
+    }
+}
