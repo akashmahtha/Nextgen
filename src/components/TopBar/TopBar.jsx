@@ -8,44 +8,42 @@ function TopBar() {
         {/* LEFT */}
         <div className="topbar-left">
 
-         
-
-          <a href="mailto: nextgencivil@gmail.com">
+          <a href="mailto:nextgencivil@gmail.com">
             <span>✉</span>
-              nextgencivil@gmail.com
+            nextgencivil@gmail.com
           </a>
 
-          <a href="tel:06126536555">
+          <a href="tel:+919820280493">
             <span>☎</span>
-             9820280493
+            +91 98202 80493
           </a>
-
-          
 
         </div>
-
 
         {/* RIGHT */}
         <div className="topbar-right">
 
           <span>Follow Us</span>
 
+          {/* Facebook */}
           <a
             href="https://www.facebook.com/nextgencivilonline"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="Facebook"
-            onClick={(e) => e.preventDefault()}
           >
             f
           </a>
 
+          {/* Instagram */}
           <a
-            href="https://www.instagram.com/nextgencivilengg"
+            href="https://www.instagram.com/nextgencivilengg/"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="Instagram"
-            onClick={(e) => e.preventDefault()}
           >
             ◎
           </a>
-
 
         </div>
 
