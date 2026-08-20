@@ -7,6 +7,8 @@ import {
   Phone,
 } from "lucide-react";
 
+import { Link } from "react-router-dom";
+
 import Footer from "../components/Footer/Footer";
 
 import "./Contact.css";
@@ -15,7 +17,6 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Email functionality will be added later.
     alert("Thank you! Your enquiry has been received.");
   };
 
@@ -166,6 +167,20 @@ function Contact() {
 
             </div>
 
+
+            {/* PATNA PHONE 1 */}
+
+            <a
+              href="tel:+919820280493"
+              className="contact-office-phone"
+            >
+              <Phone size={16} />
+              +91 98202 80493
+            </a>
+
+
+            {/* PATNA PHONE 2 */}
+
             <a
               href="tel:+917368086782"
               className="contact-office-phone"
@@ -221,12 +236,15 @@ function Contact() {
 
             </div>
 
+
+            {/* PUNE PHONE */}
+
             <a
-              href="tel:+91982028049"
+              href="tel:+919820280493"
               className="contact-office-phone"
             >
               <Phone size={16} />
-              +91 98202 8049
+              +91 98202 80493
             </a>
 
           </article>
@@ -290,6 +308,28 @@ function Contact() {
             </a>
 
 
+            {/* PATNA SECOND PHONE */}
+
+            <a
+              href="tel:+917368086782"
+              className="contact-info-card"
+            >
+
+              <div className="contact-info-icon">
+                <Phone size={21} />
+              </div>
+
+              <span>
+                PATNA OFFICE
+              </span>
+
+              <h3>
+                +91 73680 86782
+              </h3>
+
+            </a>
+
+
             {/* EMAIL */}
 
             <a
@@ -345,8 +385,6 @@ function Contact() {
 
         <div className="contact-message-container">
 
-          {/* FORM HEADING */}
-
           <div className="contact-message-heading">
 
             <span className="contact-eyebrow">
@@ -368,9 +406,7 @@ function Contact() {
           </div>
 
 
-          {/* =================================================
-              CONTACT FORM
-          ================================================= */}
+          {/* CONTACT FORM */}
 
           <form
             className="contact-form"
@@ -478,6 +514,10 @@ function Contact() {
                     Real Estate Solutions
                   </option>
 
+                  <option value="Home Construction">
+                    Home Construction
+                  </option>
+
                 </select>
 
               </div>
@@ -545,15 +585,25 @@ function Contact() {
           </div>
 
 
-          <a
-            href="tel:+919820280493"
-            className="contact-cta-button"
-          >
-            CALL US
+          <div className="contact-cta-buttons">
 
-            <Phone size={17} />
+            <a
+              href="tel:+919820280493"
+              className="contact-cta-button"
+            >
+              CALL US
+              <Phone size={17} />
+            </a>
 
-          </a>
+            <a
+              href="tel:+917368086782"
+              className="contact-cta-button"
+            >
+              PATNA OFFICE
+              <Phone size={17} />
+            </a>
+
+          </div>
 
         </div>
 

@@ -107,6 +107,12 @@ function Footer() {
               </li>
 
               <li>
+                <Link to="/home-construction">
+                  Home Construction
+                </Link>
+              </li>
+
+              <li>
                 <Link to="/projects">
                   Projects
                 </Link>
@@ -194,7 +200,9 @@ function Footer() {
             </div>
 
 
-            {/* PATNA OFFICE */}
+            {/* =================================================
+                PATNA OFFICE
+            ================================================= */}
 
             <div className="footer-contact-item">
 
@@ -209,17 +217,33 @@ function Footer() {
                 <br />
 
                 501, Laxmi Community Hall,
+
                 <br />
 
                 Saket Vihar Sector D, Anishabad,
+
                 <br />
 
                 Mitrmandal Colony,
+
                 <br />
 
                 Patna – 800002
 
                 <br />
+
+                {/* PATNA NUMBER 1 */}
+
+                <a
+                  href="tel:+919820280493"
+                  className="footer-office-phone"
+                >
+                  +91 98202 80493
+                </a>
+
+                <br />
+
+                {/* PATNA NUMBER 2 */}
 
                 <a
                   href="tel:+917368086782"
@@ -233,7 +257,9 @@ function Footer() {
             </div>
 
 
-            {/* PUNE OFFICE */}
+            {/* =================================================
+                PUNE OFFICE
+            ================================================= */}
 
             <div className="footer-contact-item">
 
@@ -248,26 +274,33 @@ function Footer() {
                 <br />
 
                 Veggies Bowl Hotel,
+
                 <br />
 
                 Near Podar International School,
+
                 <br />
 
                 Dhole Patil College Road,
+
                 <br />
 
                 Opp. Gera Planet of Joy Project,
+
                 <br />
 
                 Wagholi,
+
                 <br />
 
                 Pune – 412207
 
                 <br />
 
+                {/* PUNE NUMBER */}
+
                 <a
-                  href="tel:+91982028049"
+                  href="tel:+919820280493"
                   className="footer-office-phone"
                 >
                   +91 98202 80493
