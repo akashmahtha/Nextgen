@@ -45,25 +45,20 @@ function Footer() {
             <div className="footer-social">
 
               <a
-                href="#"
+                href="https://www.facebook.com/nextgencivilonline"
                 aria-label="Facebook"
               >
                 f
               </a>
 
               <a
-                href="#"
+                href="https://www.instagram.com/nextgencivilengg"
                 aria-label="Instagram"
               >
                 ◎
               </a>
 
-              <a
-                href="#"
-                aria-label="LinkedIn"
-              >
-                in
-              </a>
+              
 
             </div>
 
@@ -141,11 +136,7 @@ function Footer() {
                 </Link>
               </li>
 
-              <li>
-                <Link to="/vastu-consultancy">
-                  Vastu Consultancy
-                </Link>
-              </li>
+             
 
               <li>
                 <Link to="/real-estate">

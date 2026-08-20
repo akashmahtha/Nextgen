@@ -169,30 +169,7 @@ function Hero() {
       {/* =========================================
           SOCIAL BUTTONS
       ========================================= */}
-      <div className="hero-social">
-
-        <a
-          href="#"
-          aria-label="Facebook"
-        >
-          f
-        </a>
-
-        <a
-          href="#"
-          aria-label="Website"
-        >
-          W
-        </a>
-
-        <a
-          href="#"
-          aria-label="Twitter"
-        >
-          t
-        </a>
-
-      </div>
+      
 
     </section>
   );

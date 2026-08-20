@@ -8,14 +8,11 @@ function TopBar() {
         {/* LEFT */}
         <div className="topbar-left">
 
-          <a href="mailto:info@ngecs.com">
-            <span>✉</span>
-            info@ngecs.com
-          </a>
+         
 
-          <a href="mailto:ngecsonline@gmail.com">
+          <a href="mailto: nextgencivil@gmail.com">
             <span>✉</span>
-            ngecsonline@gmail.com
+              nextgencivil@gmail.com
           </a>
 
           <a href="tel:06126536555">
@@ -23,10 +20,7 @@ function TopBar() {
             0612-6536-555
           </a>
 
-          <a href="tel:+917654111111">
-            <span>☎</span>
-            +91-7654-111-111
-          </a>
+          
 
         </div>
 
@@ -37,7 +31,7 @@ function TopBar() {
           <span>Follow Us</span>
 
           <a
-            href="#"
+            href="https://www.facebook.com/nextgencivilonline"
             aria-label="Facebook"
             onClick={(e) => e.preventDefault()}
           >
@@ -45,20 +39,13 @@ function TopBar() {
           </a>
 
           <a
-            href="#"
+            href="https://www.instagram.com/nextgencivilengg"
             aria-label="Instagram"
             onClick={(e) => e.preventDefault()}
           >
             ◎
           </a>
 
-          <a
-            href="#"
-            aria-label="LinkedIn"
-            onClick={(e) => e.preventDefault()}
-          >
-            in
-          </a>
 
         </div>
 

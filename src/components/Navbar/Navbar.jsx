@@ -55,9 +55,7 @@ function Navbar() {
             Construction Management
           </Link>
 
-          <Link to="/vastu-consultancy">
-            Vastu
-          </Link>
+         
 
           <div className="nav-dropdown">
 
@@ -84,9 +82,7 @@ function Navbar() {
 
           </div>
 
-          <Link to="/testing-lab">
-            Testing Lab
-          </Link>
+         
 
           <Link to="/contact">
             Contact
