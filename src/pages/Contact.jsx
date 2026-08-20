@@ -12,6 +12,13 @@ import Footer from "../components/Footer/Footer";
 import "./Contact.css";
 
 function Contact() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Email functionality will be added later.
+    alert("Thank you! Your enquiry has been received.");
+  };
+
   return (
     <>
       {/* =====================================================
@@ -117,7 +124,9 @@ function Contact() {
 
         <div className="contact-offices-container">
 
-          {/* PATNA */}
+          {/* =================================================
+              PATNA OFFICE
+          ================================================= */}
 
           <article className="contact-office-card">
 
@@ -158,18 +167,19 @@ function Contact() {
             </div>
 
             <a
-              href="tel:+919820280493"
+              href="tel:+917368086782"
               className="contact-office-phone"
             >
               <Phone size={16} />
-
-              +91 98202 80493
+              +91 73680 86782
             </a>
 
           </article>
 
 
-          {/* PUNE */}
+          {/* =================================================
+              PUNE OFFICE
+          ================================================= */}
 
           <article className="contact-office-card">
 
@@ -212,12 +222,11 @@ function Contact() {
             </div>
 
             <a
-              href="tel:+919820280493"
+              href="tel:+91982028049"
               className="contact-office-phone"
             >
               <Phone size={16} />
-
-              +91 98202 80493
+              +91 98202 8049
             </a>
 
           </article>
@@ -259,6 +268,8 @@ function Contact() {
 
           <div className="contact-info-grid">
 
+            {/* MAIN PHONE */}
+
             <a
               href="tel:+919820280493"
               className="contact-info-card"
@@ -269,7 +280,7 @@ function Contact() {
               </div>
 
               <span>
-                PHONE
+                MAIN PHONE
               </span>
 
               <h3>
@@ -279,6 +290,30 @@ function Contact() {
             </a>
 
 
+            {/* EMAIL */}
+
+            <a
+              href="mailto:nextgencivil@gmail.com"
+              className="contact-info-card"
+            >
+
+              <div className="contact-info-icon">
+                <Mail size={21} />
+              </div>
+
+              <span>
+                EMAIL
+              </span>
+
+              <h3>
+                nextgencivil@gmail.com
+              </h3>
+
+            </a>
+
+
+            {/* OFFICES */}
+
             <div className="contact-info-card">
 
               <div className="contact-info-icon">
@@ -286,7 +321,7 @@ function Contact() {
               </div>
 
               <span>
-                OFFICE
+                OFFICES
               </span>
 
               <h3>
@@ -303,12 +338,14 @@ function Contact() {
 
 
       {/* =====================================================
-          MESSAGE SECTION
+          PROJECT ENQUIRY
       ===================================================== */}
 
       <section className="contact-message">
 
         <div className="contact-message-container">
+
+          {/* FORM HEADING */}
 
           <div className="contact-message-heading">
 
@@ -331,19 +368,31 @@ function Contact() {
           </div>
 
 
-          <form className="contact-form">
+          {/* =================================================
+              CONTACT FORM
+          ================================================= */}
+
+          <form
+            className="contact-form"
+            onSubmit={handleSubmit}
+          >
+
+            {/* NAME + PHONE */}
 
             <div className="contact-form-row">
 
               <div className="contact-form-group">
 
-                <label>
+                <label htmlFor="name">
                   NAME
                 </label>
 
                 <input
+                  id="name"
+                  name="name"
                   type="text"
                   placeholder="Your name"
+                  required
                 />
 
               </div>
@@ -351,13 +400,16 @@ function Contact() {
 
               <div className="contact-form-group">
 
-                <label>
+                <label htmlFor="phone">
                   PHONE
                 </label>
 
                 <input
+                  id="phone"
+                  name="phone"
                   type="tel"
                   placeholder="Your phone number"
+                  required
                 />
 
               </div>
@@ -365,17 +417,22 @@ function Contact() {
             </div>
 
 
+            {/* EMAIL + SERVICE */}
+
             <div className="contact-form-row">
 
               <div className="contact-form-group">
 
-                <label>
+                <label htmlFor="email">
                   EMAIL
                 </label>
 
                 <input
+                  id="email"
+                  name="email"
                   type="email"
                   placeholder="Your email"
+                  required
                 />
 
               </div>
@@ -383,33 +440,41 @@ function Contact() {
 
               <div className="contact-form-group">
 
-                <label>
+                <label htmlFor="service">
                   SERVICE
                 </label>
 
-                <select defaultValue="">
+                <select
+                  id="service"
+                  name="service"
+                  defaultValue=""
+                  required
+                >
 
-                  <option value="" disabled>
+                  <option
+                    value=""
+                    disabled
+                  >
                     Select service
                   </option>
 
-                  <option>
+                  <option value="Civil Engineering">
                     Civil Engineering
                   </option>
 
-                  <option>
+                  <option value="Construction Management">
                     Construction Management
                   </option>
 
-                  <option>
+                  <option value="Project Marketing">
                     Project Marketing
                   </option>
 
-                  <option>
+                  <option value="Investment Management">
                     Investment Management
                   </option>
 
-                  <option>
+                  <option value="Real Estate Solutions">
                     Real Estate Solutions
                   </option>
 
@@ -420,19 +485,26 @@ function Contact() {
             </div>
 
 
+            {/* MESSAGE */}
+
             <div className="contact-form-group">
 
-              <label>
+              <label htmlFor="message">
                 MESSAGE
               </label>
 
               <textarea
+                id="message"
+                name="message"
                 rows="6"
                 placeholder="Tell us about your project..."
+                required
               ></textarea>
 
             </div>
 
+
+            {/* SUBMIT */}
 
             <button
               type="submit"
@@ -472,6 +544,7 @@ function Contact() {
 
           </div>
 
+
           <a
             href="tel:+919820280493"
             className="contact-cta-button"
@@ -487,7 +560,12 @@ function Contact() {
       </section>
 
 
+      {/* =====================================================
+          FOOTER
+      ===================================================== */}
+
       <Footer />
+
     </>
   );
 }

@@ -26,7 +26,10 @@ function Footer() {
 
           <div className="footer-column footer-company">
 
-            <Link to="/" className="footer-logo">
+            <Link
+              to="/"
+              className="footer-logo"
+            >
               <img
                 src="/images/logo.png"
                 alt="NextGen Civil"
@@ -40,29 +43,38 @@ function Footer() {
               innovation and client satisfaction.
             </p>
 
+
             {/* SOCIAL MEDIA */}
 
             <div className="footer-social">
 
+              {/* FACEBOOK */}
+
               <a
                 href="https://www.facebook.com/nextgencivilonline"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Facebook"
               >
                 f
               </a>
 
+
+              {/* INSTAGRAM */}
+
               <a
-                href="https://www.instagram.com/nextgencivilengg"
+                href="https://www.instagram.com/nextgencivilengg/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
               >
                 ◎
               </a>
 
-              
-
             </div>
 
           </div>
+
 
           {/* =================================================
               QUICK LINKS
@@ -70,7 +82,9 @@ function Footer() {
 
           <div className="footer-column">
 
-            <h3>QUICK LINKS</h3>
+            <h3>
+              QUICK LINKS
+            </h3>
 
             <ul>
 
@@ -87,14 +101,14 @@ function Footer() {
               </li>
 
               <li>
-                <Link to="/projects">
-                  Projects
+                <Link to="/services">
+                  Services
                 </Link>
               </li>
 
               <li>
-                <Link to="/team">
-                  Our Team
+                <Link to="/projects">
+                  Projects
                 </Link>
               </li>
 
@@ -108,13 +122,16 @@ function Footer() {
 
           </div>
 
+
           {/* =================================================
               SERVICES
           ================================================= */}
 
           <div className="footer-column">
 
-            <h3>OUR SERVICES</h3>
+            <h3>
+              OUR SERVICES
+            </h3>
 
             <ul>
 
@@ -125,18 +142,22 @@ function Footer() {
               </li>
 
               <li>
+                <Link to="/construction-management">
+                  Construction Management
+                </Link>
+              </li>
+
+              <li>
                 <Link to="/project-marketing">
                   Project Marketing
                 </Link>
               </li>
 
               <li>
-                <Link to="/construction-management">
-                  Construction Management
+                <Link to="/investment-management">
+                  Investment Management
                 </Link>
               </li>
-
-             
 
               <li>
                 <Link to="/real-estate">
@@ -148,15 +169,19 @@ function Footer() {
 
           </div>
 
+
           {/* =================================================
               CONTACT
           ================================================= */}
 
           <div className="footer-column footer-contact">
 
-            <h3>CONTACT US</h3>
+            <h3>
+              CONTACT US
+            </h3>
 
-            {/* PHONE */}
+
+            {/* MAIN PHONE */}
 
             <div className="footer-contact-item">
 
@@ -167,6 +192,7 @@ function Footer() {
               </a>
 
             </div>
+
 
             {/* PATNA OFFICE */}
 
@@ -193,9 +219,19 @@ function Footer() {
 
                 Patna – 800002
 
+                <br />
+
+                <a
+                  href="tel:+917368086782"
+                  className="footer-office-phone"
+                >
+                  +91 73680 86782
+                </a>
+
               </span>
 
             </div>
+
 
             {/* PUNE OFFICE */}
 
@@ -228,11 +264,21 @@ function Footer() {
 
                 Pune – 412207
 
+                <br />
+
+                <a
+                  href="tel:+91982028049"
+                  className="footer-office-phone"
+                >
+                  +91 98202 80493
+                </a>
+
               </span>
 
             </div>
 
           </div>
+
 
           {/* =================================================
               NEWSLETTER
@@ -248,6 +294,7 @@ function Footer() {
               Subscribe to receive our latest updates,
               projects and company news.
             </p>
+
 
             <form
               className="newsletter-form"
@@ -275,6 +322,7 @@ function Footer() {
 
       </div>
 
+
       {/* =====================================================
           FOOTER BOTTOM
       ===================================================== */}
@@ -288,19 +336,23 @@ function Footer() {
             All Rights Reserved.
           </p>
 
+
           <div className="footer-legal">
 
             <Link to="/privacy-policy">
               Privacy Policy
             </Link>
 
-            <span>|</span>
+            <span>
+              |
+            </span>
 
             <Link to="/terms">
               Terms &amp; Conditions
             </Link>
 
           </div>
+
 
           <p className="footer-credit">
             Designed &amp; Developed with ❤️

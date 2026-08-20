@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+
 import {
   Menu,
   X,
@@ -23,8 +24,15 @@ function Navbar() {
 
       <div className="navbar-container">
 
-        {/* LOGO */}
-        <Link to="/" className="navbar-logo" onClick={closeMenu}>
+        {/* =====================================================
+            LOGO
+        ===================================================== */}
+
+        <Link
+          to="/"
+          className="navbar-logo"
+          onClick={closeMenu}
+        >
           <img
             src="/images/logo.png"
             alt="NextGen Civil"
@@ -36,12 +44,20 @@ function Navbar() {
           </div>
         </Link>
 
-        {/* DESKTOP NAVIGATION */}
+
+        {/* =====================================================
+            DESKTOP NAVIGATION
+        ===================================================== */}
+
         <nav className="desktop-nav">
 
-          <Link to="/">Home</Link>
+          <Link to="/">
+            Home
+          </Link>
 
-          <Link to="/about">About Us</Link>
+          <Link to="/about">
+            About Us
+          </Link>
 
           <Link to="/civil-engineering">
             Civil Engineering
@@ -55,12 +71,20 @@ function Navbar() {
             Construction Management
           </Link>
 
-         
+          {/* HOME CONSTRUCTION - DIRECT LINK */}
+
+          <Link to="/home-construction">
+            Home Construction
+          </Link>
+
+
+          {/* REAL ESTATE DROPDOWN */}
 
           <div className="nav-dropdown">
 
             <button type="button">
               Real Estate
+
               <ChevronDown size={15} />
             </button>
 
@@ -82,7 +106,6 @@ function Navbar() {
 
           </div>
 
-         
 
           <Link to="/contact">
             Contact
@@ -90,33 +113,65 @@ function Navbar() {
 
         </nav>
 
-        {/* DESKTOP CTA */}
-        <Link to="/contact" className="navbar-contact">
+
+        {/* =====================================================
+            DESKTOP CTA
+        ===================================================== */}
+
+        <Link
+          to="/contact"
+          className="navbar-contact"
+        >
           <Phone size={17} />
+
           Contact Us
         </Link>
 
-        {/* MOBILE BUTTON */}
+
+        {/* =====================================================
+            MOBILE MENU BUTTON
+        ===================================================== */}
+
         <button
           className="mobile-menu-button"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle navigation"
         >
-          {menuOpen ? <X size={28} /> : <Menu size={28} />}
+          {menuOpen ? (
+            <X size={28} />
+          ) : (
+            <Menu size={28} />
+          )}
         </button>
 
       </div>
 
-      {/* MOBILE NAVIGATION */}
-      <div className={`mobile-nav ${menuOpen ? "active" : ""}`}>
 
-        <Link to="/" onClick={closeMenu}>
+      {/* =====================================================
+          MOBILE NAVIGATION
+      ===================================================== */}
+
+      <div
+        className={`mobile-nav ${
+          menuOpen ? "active" : ""
+        }`}
+      >
+
+        <Link
+          to="/"
+          onClick={closeMenu}
+        >
           Home
         </Link>
 
-        <Link to="/about" onClick={closeMenu}>
+
+        <Link
+          to="/about"
+          onClick={closeMenu}
+        >
           About Us
         </Link>
+
 
         <Link
           to="/civil-engineering"
@@ -125,12 +180,14 @@ function Navbar() {
           Civil Engineering
         </Link>
 
+
         <Link
           to="/project-marketing"
           onClick={closeMenu}
         >
           Project Marketing
         </Link>
+
 
         <Link
           to="/construction-management"
@@ -139,12 +196,26 @@ function Navbar() {
           Construction Management
         </Link>
 
+
+        {/* HOME CONSTRUCTION - DIRECT LINK */}
+
+        <Link
+          to="/home-construction"
+          onClick={closeMenu}
+        >
+          Home Construction
+        </Link>
+
+
         <Link
           to="/vastu-consultancy"
           onClick={closeMenu}
         >
           Vastu Consultancy
         </Link>
+
+
+        {/* MOBILE REAL ESTATE */}
 
         <div className="mobile-dropdown">
 
@@ -154,7 +225,10 @@ function Navbar() {
               setRealEstateOpen(!realEstateOpen)
             }
           >
-            <span>Real Estate</span>
+
+            <span>
+              Real Estate
+            </span>
 
             <ChevronDown
               size={18}
@@ -164,9 +238,12 @@ function Navbar() {
                   : ""
               }
             />
+
           </button>
 
+
           {realEstateOpen && (
+
             <div className="mobile-submenu">
 
               <Link
@@ -191,9 +268,11 @@ function Navbar() {
               </Link>
 
             </div>
+
           )}
 
         </div>
+
 
         <Link
           to="/testing-lab"
@@ -201,6 +280,7 @@ function Navbar() {
         >
           Testing Lab
         </Link>
+
 
         <Link
           to="/contact"
