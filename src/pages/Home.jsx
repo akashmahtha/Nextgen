@@ -1,5 +1,8 @@
 import Hero from "../components/Hero/Hero";
 import QuickLinks from "../components/QuickLinks/QuickLinks";
+
+import HomeBudgetCalculator from "../components/HomeBudgetCalculator/HomeBudgetCalculator";
+
 import AboutSection from "../components/AboutSection/AboutSection";
 import ServicesSection from "../components/ServicesSection/ServicesSection";
 import StatsSection from "../components/StatsSection/StatsSection";
@@ -9,25 +12,59 @@ import Footer from "../components/Footer/Footer";
 function Home() {
   return (
     <>
-      {/* Hero */}
+      {/* =====================================================
+          HERO
+      ===================================================== */}
+
       <Hero />
 
-      {/* Quick Links */}
+
+      {/* =====================================================
+          QUICK LINKS
+      ===================================================== */}
+
       <QuickLinks />
 
-      {/* About */}
+
+      {/* =====================================================
+          HOME BUDGET CALCULATOR
+      ===================================================== */}
+
+      <HomeBudgetCalculator />
+
+
+      {/* =====================================================
+          ABOUT
+      ===================================================== */}
+
       <AboutSection />
 
-      {/* Services */}
+
+      {/* =====================================================
+          SERVICES
+      ===================================================== */}
+
       <ServicesSection />
 
-      {/* Statistics */}
+
+      {/* =====================================================
+          STATISTICS
+      ===================================================== */}
+
       <StatsSection />
 
-      {/* Projects */}
+
+      {/* =====================================================
+          PROJECTS
+      ===================================================== */}
+
       <ProjectsSection />
 
-      {/* Footer */}
+
+      {/* =====================================================
+          FOOTER
+      ===================================================== */}
+
       <Footer />
     </>
   );
