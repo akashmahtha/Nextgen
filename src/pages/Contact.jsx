@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import {
   ArrowRight,
   Building2,
@@ -12,6 +14,50 @@ import Footer from "../components/Footer/Footer";
 import "./Contact.css";
 
 function Contact() {
+  const [formStatus, setFormStatus] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  /* =====================================================
+     FORM SUBMIT
+  ===================================================== */
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    setIsSubmitting(true);
+    setFormStatus("");
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(
+        "https://api.web3forms.com/submit",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      const data = await response.json();
+
+      if (data.success) {
+        setFormStatus("success");
+
+        // Clear form after successful submission
+        form.reset();
+      } else {
+        setFormStatus("error");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+
+      setFormStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <>
       {/* =====================================================
@@ -426,8 +472,7 @@ function Contact() {
 
           <form
             className="contact-form"
-            action="https://api.web3forms.com/submit"
-            method="POST"
+            onSubmit={handleSubmit}
           >
 
             {/* WEB3FORMS ACCESS KEY */}
@@ -588,15 +633,39 @@ function Contact() {
             </div>
 
 
+            {/* SUCCESS MESSAGE */}
+
+            {formStatus === "success" && (
+              <div className="contact-success">
+                ✓ Your enquiry has been sent successfully.
+              </div>
+            )}
+
+
+            {/* ERROR MESSAGE */}
+
+            {formStatus === "error" && (
+              <div className="contact-error">
+                Something went wrong. Please try again.
+              </div>
+            )}
+
+
             {/* SUBMIT */}
 
             <button
               type="submit"
               className="contact-submit"
+              disabled={isSubmitting}
             >
-              SEND ENQUIRY
 
-              <ArrowRight size={17} />
+              {isSubmitting
+                ? "SENDING..."
+                : "SEND ENQUIRY"}
+
+              {!isSubmitting && (
+                <ArrowRight size={17} />
+              )}
 
             </button>
 
@@ -638,6 +707,7 @@ function Contact() {
               CALL US
               <Phone size={17} />
             </a>
+
 
             <a
               href="tel:+917368086782"
