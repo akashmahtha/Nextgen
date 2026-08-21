@@ -368,26 +368,7 @@ function Contact() {
             </a>
 
 
-            {/* EMAIL 1 */}
-
-            <a
-              href="mailto:nextgencivil@gmail.com"
-              className="contact-info-card"
-            >
-
-              <div className="contact-info-icon">
-                <Mail size={21} />
-              </div>
-
-              <span>
-                EMAIL
-              </span>
-
-              <h3>
-                nextgencivil@gmail.com
-              </h3>
-
-            </a>
+          
 
 
             {/* EMAIL 2 */}

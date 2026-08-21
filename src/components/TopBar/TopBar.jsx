@@ -8,11 +8,6 @@ function TopBar() {
         {/* LEFT */}
         <div className="topbar-left">
 
-          {/* EMAIL 1 */}
-          <a href="mailto:nextgencivil@gmail.com">
-            <span>✉</span>
-            nextgencivil@gmail.com
-          </a>
 
           {/* EMAIL 2 */}
           <a href="mailto:nextgencivilengg@gmail.com">
