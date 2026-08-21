@@ -207,12 +207,7 @@ function Navbar() {
         </Link>
 
 
-        <Link
-          to="/vastu-consultancy"
-          onClick={closeMenu}
-        >
-          Vastu Consultancy
-        </Link>
+        
 
 
         {/* MOBILE REAL ESTATE */}
@@ -274,12 +269,7 @@ function Navbar() {
         </div>
 
 
-        <Link
-          to="/testing-lab"
-          onClick={closeMenu}
-        >
-          Testing Lab
-        </Link>
+        
 
 
         <Link
