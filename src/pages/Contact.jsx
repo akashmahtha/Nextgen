@@ -7,19 +7,11 @@ import {
   Phone,
 } from "lucide-react";
 
-import { Link } from "react-router-dom";
-
 import Footer from "../components/Footer/Footer";
 
 import "./Contact.css";
 
 function Contact() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    alert("Thank you! Your enquiry has been received.");
-  };
-
   return (
     <>
       {/* =====================================================
@@ -308,7 +300,7 @@ function Contact() {
             </a>
 
 
-            {/* PATNA SECOND PHONE */}
+            {/* PATNA PHONE */}
 
             <a
               href="tel:+917368086782"
@@ -330,7 +322,7 @@ function Contact() {
             </a>
 
 
-            {/* EMAIL */}
+            {/* EMAIL 1 */}
 
             <a
               href="mailto:nextgencivil@gmail.com"
@@ -347,6 +339,28 @@ function Contact() {
 
               <h3>
                 nextgencivil@gmail.com
+              </h3>
+
+            </a>
+
+
+            {/* EMAIL 2 */}
+
+            <a
+              href="mailto:nextgencivilengg@gmail.com"
+              className="contact-info-card"
+            >
+
+              <div className="contact-info-icon">
+                <Mail size={21} />
+              </div>
+
+              <span>
+                EMAIL
+              </span>
+
+              <h3>
+                nextgencivilengg@gmail.com
               </h3>
 
             </a>
@@ -406,12 +420,42 @@ function Contact() {
           </div>
 
 
-          {/* CONTACT FORM */}
+          {/* =================================================
+              WEB3FORMS CONTACT FORM
+          ================================================= */}
 
           <form
             className="contact-form"
-            onSubmit={handleSubmit}
+            action="https://api.web3forms.com/submit"
+            method="POST"
           >
+
+            {/* WEB3FORMS ACCESS KEY */}
+
+            <input
+              type="hidden"
+              name="access_key"
+              value="22e00724-69ac-408d-b868-a3a4ddc0c280"
+            />
+
+
+            {/* EMAIL SUBJECT */}
+
+            <input
+              type="hidden"
+              name="subject"
+              value="New Project Enquiry - Next Gen Civil"
+            />
+
+
+            {/* SENDER NAME */}
+
+            <input
+              type="hidden"
+              name="from_name"
+              value="Next Gen Civil Website"
+            />
+
 
             {/* NAME + PHONE */}
 

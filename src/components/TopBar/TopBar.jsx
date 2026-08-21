@@ -8,11 +8,19 @@ function TopBar() {
         {/* LEFT */}
         <div className="topbar-left">
 
+          {/* EMAIL 1 */}
           <a href="mailto:nextgencivil@gmail.com">
             <span>✉</span>
             nextgencivil@gmail.com
           </a>
 
+          {/* EMAIL 2 */}
+          <a href="mailto:nextgencivilengg@gmail.com">
+            <span>✉</span>
+            nextgencivilengg@gmail.com
+          </a>
+
+          {/* PHONE */}
           <a href="tel:+919820280493">
             <span>☎</span>
             +91 98202 80493
@@ -20,12 +28,13 @@ function TopBar() {
 
         </div>
 
+
         {/* RIGHT */}
         <div className="topbar-right">
 
           <span>Follow Us</span>
 
-          {/* Facebook */}
+          {/* FACEBOOK */}
           <a
             href="https://www.facebook.com/nextgencivilonline"
             target="_blank"
@@ -35,7 +44,7 @@ function TopBar() {
             f
           </a>
 
-          {/* Instagram */}
+          {/* INSTAGRAM */}
           <a
             href="https://www.instagram.com/nextgencivilengg/"
             target="_blank"
