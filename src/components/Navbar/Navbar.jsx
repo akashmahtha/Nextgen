@@ -23,6 +23,10 @@ function Navbar() {
   return (
     <header className="navbar">
 
+      {/* =====================================================
+          NAVBAR CONTAINER
+      ===================================================== */}
+
       <div className="navbar-container">
 
         {/* =====================================================
@@ -56,21 +60,26 @@ function Navbar() {
             Home
           </Link>
 
+
           <Link to="/about">
             About Us
           </Link>
+
 
           <Link to="/civil-engineering">
             Civil Engineering
           </Link>
 
+
           <Link to="/project-marketing">
             Project Marketing
           </Link>
 
+
           <Link to="/construction-management">
             Construction Management
           </Link>
+
 
           <Link to="/home-construction">
             Home Construction
@@ -87,7 +96,9 @@ function Navbar() {
               type="button"
               aria-label="Open Real Estate menu"
             >
-              <span>Real Estate</span>
+              <span>
+                Real Estate
+              </span>
 
               <ChevronDown size={15} />
 
@@ -103,12 +114,14 @@ function Navbar() {
                 Real Estate Consultancy
               </Link>
 
+
               <Link
                 to="/investment-management"
                 onClick={closeMenu}
               >
                 Investment Management
               </Link>
+
 
               <Link
                 to="/projects"
@@ -143,7 +156,7 @@ function Navbar() {
 
 
         {/* =====================================================
-            CONTACT BUTTON
+            DESKTOP CONTACT BUTTON
         ===================================================== */}
 
         <Link
@@ -191,6 +204,8 @@ function Navbar() {
         }`}
       >
 
+        {/* HOME */}
+
         <Link
           to="/"
           onClick={closeMenu}
@@ -198,6 +213,8 @@ function Navbar() {
           Home
         </Link>
 
+
+        {/* ABOUT */}
 
         <Link
           to="/about"
@@ -207,6 +224,8 @@ function Navbar() {
         </Link>
 
 
+        {/* CIVIL ENGINEERING */}
+
         <Link
           to="/civil-engineering"
           onClick={closeMenu}
@@ -214,6 +233,8 @@ function Navbar() {
           Civil Engineering
         </Link>
 
+
+        {/* PROJECT MARKETING */}
 
         <Link
           to="/project-marketing"
@@ -223,6 +244,8 @@ function Navbar() {
         </Link>
 
 
+        {/* CONSTRUCTION MANAGEMENT */}
+
         <Link
           to="/construction-management"
           onClick={closeMenu}
@@ -230,6 +253,8 @@ function Navbar() {
           Construction Management
         </Link>
 
+
+        {/* HOME CONSTRUCTION */}
 
         <Link
           to="/home-construction"
@@ -240,7 +265,7 @@ function Navbar() {
 
 
         {/* =================================================
-            MOBILE REAL ESTATE
+            MOBILE REAL ESTATE DROPDOWN
         ================================================= */}
 
         <div className="mobile-dropdown">
@@ -251,6 +276,7 @@ function Navbar() {
               setRealEstateOpen(!realEstateOpen)
             }
           >
+
             <span>
               Real Estate
             </span>
@@ -263,6 +289,7 @@ function Navbar() {
                   : ""
               }
             />
+
           </button>
 
 
@@ -277,12 +304,14 @@ function Navbar() {
                 Real Estate Consultancy
               </Link>
 
+
               <Link
                 to="/investment-management"
                 onClick={closeMenu}
               >
                 Investment Management
               </Link>
+
 
               <Link
                 to="/projects"
@@ -299,7 +328,7 @@ function Navbar() {
 
 
         {/* =================================================
-            MOBILE CALCULATE BUDGET
+            MOBILE CALCULATE BUDGET BUTTON
         ================================================= */}
 
         <Link
@@ -307,6 +336,7 @@ function Navbar() {
           className="mobile-calculator"
           onClick={closeMenu}
         >
+
           <Calculator size={18} />
 
           <span>
@@ -317,7 +347,7 @@ function Navbar() {
 
 
         {/* =================================================
-            MOBILE CONTACT
+            MOBILE CONTACT BUTTON
         ================================================= */}
 
         <Link
@@ -325,6 +355,7 @@ function Navbar() {
           className="mobile-contact"
           onClick={closeMenu}
         >
+
           <Phone size={18} />
 
           <span>
