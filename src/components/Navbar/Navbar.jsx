@@ -6,6 +6,7 @@ import {
   X,
   ChevronDown,
   Phone,
+  Calculator,
 } from "lucide-react";
 
 import "./Navbar.css";
@@ -71,34 +72,48 @@ function Navbar() {
             Construction Management
           </Link>
 
-          {/* HOME CONSTRUCTION - DIRECT LINK */}
-
           <Link to="/home-construction">
             Home Construction
           </Link>
 
 
-          {/* REAL ESTATE DROPDOWN */}
+          {/* =================================================
+              REAL ESTATE DROPDOWN
+          ================================================= */}
 
           <div className="nav-dropdown">
 
-            <button type="button">
-              Real Estate
+            <button
+              type="button"
+              aria-label="Open Real Estate menu"
+            >
+              <span>Real Estate</span>
 
               <ChevronDown size={15} />
+
             </button>
+
 
             <div className="dropdown-menu">
 
-              <Link to="/real-estate">
+              <Link
+                to="/real-estate"
+                onClick={closeMenu}
+              >
                 Real Estate Consultancy
               </Link>
 
-              <Link to="/investment-management">
+              <Link
+                to="/investment-management"
+                onClick={closeMenu}
+              >
                 Investment Management
               </Link>
 
-              <Link to="/projects">
+              <Link
+                to="/projects"
+                onClick={closeMenu}
+              >
                 Rent / Sell / Lease
               </Link>
 
@@ -107,24 +122,41 @@ function Navbar() {
           </div>
 
 
-          <Link to="/contact">
-            Contact
+          {/* =================================================
+              CALCULATE BUDGET BUTTON
+          ================================================= */}
+
+          <Link
+            to="/home-budget-calculator"
+            className="navbar-calculator"
+            onClick={closeMenu}
+          >
+            <Calculator size={16} />
+
+            <span>
+              Calculate Budget
+            </span>
+
           </Link>
 
         </nav>
 
 
         {/* =====================================================
-            DESKTOP CTA
+            CONTACT BUTTON
         ===================================================== */}
 
         <Link
           to="/contact"
           className="navbar-contact"
+          onClick={closeMenu}
         >
-          <Phone size={17} />
+          <Phone size={16} />
 
-          Contact Us
+          <span>
+            Contact Us
+          </span>
+
         </Link>
 
 
@@ -133,9 +165,11 @@ function Navbar() {
         ===================================================== */}
 
         <button
+          type="button"
           className="mobile-menu-button"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle navigation"
+          aria-expanded={menuOpen}
         >
           {menuOpen ? (
             <X size={28} />
@@ -197,8 +231,6 @@ function Navbar() {
         </Link>
 
 
-        {/* HOME CONSTRUCTION - DIRECT LINK */}
-
         <Link
           to="/home-construction"
           onClick={closeMenu}
@@ -207,10 +239,9 @@ function Navbar() {
         </Link>
 
 
-        
-
-
-        {/* MOBILE REAL ESTATE */}
+        {/* =================================================
+            MOBILE REAL ESTATE
+        ================================================= */}
 
         <div className="mobile-dropdown">
 
@@ -220,7 +251,6 @@ function Navbar() {
               setRealEstateOpen(!realEstateOpen)
             }
           >
-
             <span>
               Real Estate
             </span>
@@ -233,7 +263,6 @@ function Navbar() {
                   : ""
               }
             />
-
           </button>
 
 
@@ -269,14 +298,39 @@ function Navbar() {
         </div>
 
 
-        
+        {/* =================================================
+            MOBILE CALCULATE BUDGET
+        ================================================= */}
 
+        <Link
+          to="/home-budget-calculator"
+          className="mobile-calculator"
+          onClick={closeMenu}
+        >
+          <Calculator size={18} />
+
+          <span>
+            Calculate Budget
+          </span>
+
+        </Link>
+
+
+        {/* =================================================
+            MOBILE CONTACT
+        ================================================= */}
 
         <Link
           to="/contact"
+          className="mobile-contact"
           onClick={closeMenu}
         >
-          Contact
+          <Phone size={18} />
+
+          <span>
+            Contact Us
+          </span>
+
         </Link>
 
       </div>

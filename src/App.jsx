@@ -13,6 +13,7 @@ import ProjectMarketing from "./pages/ProjectMarketing";
 import InvestmentManagement from "./pages/InvestmentManagement";
 import RealEstate from "./pages/RealEstate";
 import HomeConstruction from "./pages/HomeConstruction";
+import HomeBudgetCalculator from "./components/HomeBudgetCalculator/HomeBudgetCalculator";
 import Contact from "./pages/Contact";
 
 import "./App.css";
@@ -63,6 +64,12 @@ function App() {
         <Route
   path="/home-construction"
   element={<HomeConstruction />}
+/>
+<Route
+  path="/home-budget-calculator"
+  element={
+    <HomeBudgetCalculator autoOpen={true} />
+  }
 />
 
         <Route

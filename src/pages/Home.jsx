@@ -1,7 +1,7 @@
 import Hero from "../components/Hero/Hero";
 import QuickLinks from "../components/QuickLinks/QuickLinks";
 
-import HomeBudgetCalculator from "../components/HomeBudgetCalculator/HomeBudgetCalculator";
+// import HomeBudgetCalculator from "../components/HomeBudgetCalculator/HomeBudgetCalculator";
 
 import AboutSection from "../components/AboutSection/AboutSection";
 import ServicesSection from "../components/ServicesSection/ServicesSection";
@@ -30,7 +30,7 @@ function Home() {
           HOME BUDGET CALCULATOR
       ===================================================== */}
 
-      <HomeBudgetCalculator />
+      {/* <HomeBudgetCalculator /> */}
 
 
       {/* =====================================================
